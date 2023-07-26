@@ -1,0 +1,14 @@
+uvicorn
+fastapi
+scrapy
+requests
+schedule
+beautifulsoup4
+aiohttp
+python-crontab
+sqlalchemy
+mysql-connector-python
+passlib[bcrypt]
+mysqlclient
+PyJWT
+croniter

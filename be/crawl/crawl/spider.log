@@ -1,0 +1,2445 @@
+2023-06-28 12:26:19 [scrapy.utils.log] INFO: Scrapy 2.9.0 started (bot: crawl)
+2023-06-28 12:26:19 [scrapy.utils.log] INFO: Versions: lxml 4.9.2.0, libxml2 2.9.12, cssselect 1.2.0, parsel 1.8.1, w3lib 2.1.1, Twisted 22.10.0, Python 3.11.3 (tags/v3.11.3:f3909b8, Apr  4 2023, 23:49:59) [MSC v.1934 64 bit (AMD64)], pyOpenSSL 23.2.0 (OpenSSL 3.1.1 30 May 2023), cryptography 41.0.1, Platform Windows-10-10.0.22621-SP0
+2023-06-28 12:26:19 [scrapy.crawler] INFO: Overridden settings:
+{'BOT_NAME': 'crawl',
+ 'FEED_EXPORT_ENCODING': 'utf-8',
+ 'LOG_FILE': 'spider.log',
+ 'NEWSPIDER_MODULE': 'crawl.spiders',
+ 'REQUEST_FINGERPRINTER_IMPLEMENTATION': '2.7',
+ 'ROBOTSTXT_OBEY': True,
+ 'SPIDER_LOADER_WARN_ONLY': True,
+ 'SPIDER_MODULES': ['crawl.spiders'],
+ 'TWISTED_REACTOR': 'twisted.internet.asyncioreactor.AsyncioSelectorReactor'}
+2023-06-28 12:26:19 [asyncio] DEBUG: Using selector: SelectSelector
+2023-06-28 12:26:19 [scrapy.utils.log] DEBUG: Using reactor: twisted.internet.asyncioreactor.AsyncioSelectorReactor
+2023-06-28 12:26:19 [scrapy.utils.log] DEBUG: Using asyncio event loop: asyncio.windows_events._WindowsSelectorEventLoop
+2023-06-28 12:26:19 [scrapy.extensions.telnet] INFO: Telnet Password: 2dfb546462cbc39e
+2023-06-28 12:26:20 [scrapy.middleware] INFO: Enabled extensions:
+['scrapy.extensions.corestats.CoreStats',
+ 'scrapy.extensions.telnet.TelnetConsole',
+ 'scrapy.extensions.logstats.LogStats']
+2023-06-28 12:26:20 [scrapy.middleware] INFO: Enabled downloader middlewares:
+['scrapy.downloadermiddlewares.robotstxt.RobotsTxtMiddleware',
+ 'scrapy.downloadermiddlewares.httpauth.HttpAuthMiddleware',
+ 'scrapy.downloadermiddlewares.downloadtimeout.DownloadTimeoutMiddleware',
+ 'scrapy.downloadermiddlewares.defaultheaders.DefaultHeadersMiddleware',
+ 'scrapy.downloadermiddlewares.useragent.UserAgentMiddleware',
+ 'scrapy.downloadermiddlewares.retry.RetryMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.MetaRefreshMiddleware',
+ 'scrapy.downloadermiddlewares.httpcompression.HttpCompressionMiddleware',
+ 'scrapy.downloadermiddlewares.redirect.RedirectMiddleware',
+ 'scrapy.downloadermiddlewares.cookies.CookiesMiddleware',
+ 'scrapy.downloadermiddlewares.httpproxy.HttpProxyMiddleware',
+ 'scrapy.downloadermiddlewares.stats.DownloaderStats']
+2023-06-28 12:26:20 [scrapy.middleware] INFO: Enabled spider middlewares:
+['scrapy.spidermiddlewares.httperror.HttpErrorMiddleware',
+ 'scrapy.spidermiddlewares.offsite.OffsiteMiddleware',
+ 'scrapy.spidermiddlewares.referer.RefererMiddleware',
+ 'scrapy.spidermiddlewares.urllength.UrlLengthMiddleware',
+ 'scrapy.spidermiddlewares.depth.DepthMiddleware']
+2023-06-28 12:26:20 [scrapy.middleware] INFO: Enabled item pipelines:
+['crawl.pipelines.MySQLPipeline']
+2023-06-28 12:26:20 [scrapy.core.engine] INFO: Spider opened
+2023-06-28 12:26:20 [scrapy.extensions.logstats] INFO: Crawled 0 pages (at 0 pages/min), scraped 0 items (at 0 items/min)
+2023-06-28 12:26:20 [scrapy.extensions.telnet] INFO: Telnet console listening on 127.0.0.1:6023
+2023-06-28 12:26:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/robots.txt> (referer: None)
+2023-06-28 12:26:25 [urllib3.connectionpool] DEBUG: Starting new HTTPS connection (1): publicsuffix.org:443
+2023-06-28 12:26:25 [urllib3.connectionpool] DEBUG: https://publicsuffix.org:443 "GET /list/public_suffix_list.dat HTTP/1.1" 200 79041
+2023-06-28 12:26:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/set-3-dao-cao-long-may-kai-luoi-don-than-nhua-cbm-3p-97015.html> (referer: None)
+2023-06-28 12:26:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-xe-suri-102-brown-mau-nau-e271-65520.html> (referer: None)
+2023-06-28 12:26:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-lemonade-2-dau-mau-nau-xam-gray-brown-2g-2ml-90295.html> (referer: None)
+2023-06-28 12:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/set-3-dao-cao-long-may-kai-luoi-don-than-nhua-cbm-3p-97015.html>
+{'crawl_time': '2023-06-28 12:26:25',
+ 'name': 'Set 3 Dạo Cạo Lông Mày KAI Lưỡi Đơn Thân Nhựa CBM-3P',
+ 'original_price': '49000 ',
+ 'price': '37000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-xe-suri-102-brown-mau-nau-e271-65520.html>
+{'crawl_time': '2023-06-28 12:26:25',
+ 'name': 'Chì Kẻ Mày Xé Suri 102 Brown Màu Nâu E271',
+ 'original_price': '32000 ',
+ 'price': '26000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-lemonade-2-dau-mau-nau-xam-gray-brown-2g-2ml-90295.html>
+{'crawl_time': '2023-06-28 12:26:26',
+ 'name': 'Chì Kẻ Mày Lemonade 2 Đầu Màu Nâu Xám 2g+2ml',
+ 'original_price': '199000 ',
+ 'price': '143000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dao-cao-chan-may-vacosi-2-cay-89879.html> (referer: None)
+2023-06-28 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dao-cao-chan-may-vacosi-2-cay-89879.html>
+{'crawl_time': '2023-06-28 12:26:26',
+ 'name': 'Dao Cạo Chân Mày Vacosi DC06 (2 Cây)',
+ 'original_price': '53000 ',
+ 'price': '37000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-chan-may-innisfree-mau-5-expresso-brown-0-3g-106577.html> (referer: None)
+2023-06-28 12:26:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-03-nau-den-5ml-3833.html> (referer: None)
+2023-06-28 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-chan-may-innisfree-mau-5-expresso-brown-0-3g-106577.html>
+{'crawl_time': '2023-06-28 12:26:26',
+ 'name': 'Chì Kẻ Chân Mày innisfree Màu 5 Expresso Brown 0.3g',
+ 'original_price': '99000 ',
+ 'price': '93000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-03-nau-den-5ml-3833.html>
+{'crawl_time': '2023-06-28 12:26:26',
+ 'name': 'Chì Mày Vacosi Định Hình Đa Năng 03 Nâu Đen 5ml',
+ 'original_price': '112000 ',
+ 'price': '78000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-xe-suri-101-black-mau-den-e271-104255.html> (referer: None)
+2023-06-28 12:26:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-xe-suri-101-black-mau-den-e271-104255.html>
+{'crawl_time': '2023-06-28 12:26:27',
+ 'name': 'Chì Kẻ Mày Xé Suri 101 Black Màu Đen E271',
+ 'original_price': '32000 ',
+ 'price': '29000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dao-cao-chan-may-kai-73501.html> (referer: None)
+2023-06-28 12:26:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-02-nau-xam-5ml-3012.html> (referer: None)
+2023-06-28 12:26:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dao-cao-chan-may-kai-73501.html>
+{'crawl_time': '2023-06-28 12:26:27',
+ 'name': 'Dao Cạo Chân Mày KAI Face Eyebrow Razor 1 Cây',
+ 'original_price': '16000 ',
+ 'price': '11000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-02-nau-xam-5ml-3012.html>
+{'crawl_time': '2023-06-28 12:26:28',
+ 'name': 'Chì Mày Vacosi Định Hình Đa Năng 02 Nâu Xám 5ml',
+ 'original_price': '112000 ',
+ 'price': '78000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-lemonade-but-ke-mat-chi-ke-may-2-dau-2-mon-91411.html> (referer: None)
+2023-06-28 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-lemonade-but-ke-mat-chi-ke-may-2-dau-2-mon-91411.html>
+{'crawl_time': '2023-06-28 12:26:28',
+ 'name': 'Combo Lemonade Bút Kẻ Mắt + Chì Kẻ Mày 2 Đầu 2 Món',
+ 'original_price': '388000 ',
+ 'price': '285000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-04-xam-dam-5ml-4398.html> (referer: None)
+2023-06-28 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-04-xam-dam-5ml-4398.html>
+{'crawl_time': '2023-06-28 12:26:28',
+ 'name': 'Chì Mày Vacosi Định Hình Đa Năng 04 Xám Đậm 5ml',
+ 'original_price': '112000 ',
+ 'price': '78000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-b-o-m-3-in-1-02-dark-brown-72013.html> (referer: None)
+2023-06-28 12:26:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-b-o-m-3-in-1-02-dark-brown-72013.html>
+{'crawl_time': '2023-06-28 12:26:28',
+ 'name': 'Chì Kẻ Mày B.O.M 3in1 #02 Dark Brown - Nâu Đen',
+ 'original_price': '248000 ',
+ 'price': '229000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/set-5-dao-cao-chan-may-kai-face-eyebrow-razor-100367.html> (referer: None)
+2023-06-28 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-chan-may-innisfree-mau-6-urban-brown-0-3g-106579.html> (referer: None)
+2023-06-28 12:26:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/set-5-dao-cao-chan-may-kai-face-eyebrow-razor-100367.html>
+{'crawl_time': '2023-06-28 12:26:29',
+ 'name': 'Set 5 Dao Cạo Chân Mày KAI Face Eyebrow Razor',
+ 'original_price': '80000 ',
+ 'price': '54000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-chan-may-innisfree-mau-6-urban-brown-0-3g-106579.html>
+{'crawl_time': '2023-06-28 12:26:29',
+ 'name': 'Chì Kẻ Chân Mày innisfree Màu 6 Urban Brown 0.3g',
+ 'original_price': '99000 ',
+ 'price': '93000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-b-o-m-3-in-1-01-gray-brown-72017.html> (referer: None)
+2023-06-28 12:26:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-b-o-m-3-in-1-01-gray-brown-72017.html>
+{'crawl_time': '2023-06-28 12:26:29',
+ 'name': 'Chì Kẻ Mày B.O.M 3in1 #01 Gray Brown - Nâu Xám',
+ 'original_price': '248000 ',
+ 'price': '229000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bot-ke-long-may-naris-cosmetics-02-natural-brown-10g-93185.html> (referer: None)
+2023-06-28 12:26:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-2-dau-lemonade-dark-brown-mau-nau-dam-2g-2ml-85431.html> (referer: None)
+2023-06-28 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bot-ke-long-may-naris-cosmetics-02-natural-brown-10g-93185.html>
+{'crawl_time': '2023-06-28 12:26:30',
+ 'name': 'Bột Kẻ Lông Mày Naris Cosmetics 02 Natural Brown 10g',
+ 'original_price': '425000 ',
+ 'price': '425000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dao-cao-chan-may-miraculous-2-cay-bo-98669.html> (referer: None)
+2023-06-28 12:26:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-2-dau-lemonade-natural-brown-mau-nau-sang-2g-2ml-85429.html> (referer: None)
+2023-06-28 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-2-dau-lemonade-dark-brown-mau-nau-dam-2g-2ml-85431.html>
+{'crawl_time': '2023-06-28 12:26:30',
+ 'name': 'Chì Kẻ Mày Lemonade 2 Đầu Màu Nâu Đậm 2g + 2ml',
+ 'original_price': '199000 ',
+ 'price': '143000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dao-cao-chan-may-miraculous-2-cay-bo-98669.html>
+{'crawl_time': '2023-06-28 12:26:30',
+ 'name': 'Dao Cạo Chân Mày MiraCulous 2 Cây/Bộ',
+ 'original_price': '38000 ',
+ 'price': '37000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-2-dau-lemonade-natural-brown-mau-nau-sang-2g-2ml-85429.html>
+{'crawl_time': '2023-06-28 12:26:30',
+ 'name': 'Chì Kẻ Mày Lemonade 2 Đầu Màu Nâu Sáng 2g + 2ml',
+ 'original_price': '199000 ',
+ 'price': '143000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-australis-mau-nau-dam-dark-brown-78580.html> (referer: None)
+2023-06-28 12:26:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-australis-mau-nau-dam-dark-brown-78580.html>
+{'crawl_time': '2023-06-28 12:26:30',
+ 'name': 'Chì Kẻ Mày Australis Không Thấm Nước Màu Nâu Sậm 1.15g',
+ 'original_price': '188000 ',
+ 'price': '148000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bo-kit-ve-may-vacosi-powder-concealer-3007.html> (referer: None)
+2023-06-28 12:26:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bo-kit-ve-may-vacosi-powder-concealer-3007.html>
+{'crawl_time': '2023-06-28 12:26:31',
+ 'name': '[Gift] Bộ Kit Vẽ Mày Vacosi Powder + Concealer (01 Light Brow)',
+ 'original_price': '169000 ',
+ 'price': '149000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-ve-lot-long-may-va-ke-mi-mat-kissme-mau-nau-dam-0-1g-105855.html> (referer: None)
+2023-06-28 12:26:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-ve-lot-long-may-va-ke-mi-mat-kissme-mau-nau-dam-0-1g-105855.html>
+{'crawl_time': '2023-06-28 12:26:31',
+ 'name': 'Bút Chì Gel Kissme Kẻ Lông Mày Và Mí Mắt 02 Nâu Đen 0.1g',
+ 'original_price': '189000 ',
+ 'price': '170000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-01-den-5ml-4400.html> (referer: None)
+2023-06-28 12:26:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-01-den-5ml-4400.html>
+{'crawl_time': '2023-06-28 12:26:31',
+ 'name': 'Chì Mày Vacosi Định Hình Đa Năng 01 Đen 5ml',
+ 'original_price': '112000 ',
+ 'price': '78000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ke-may-va-mascara-may-browit-ash-brown-0-16g-1-26g-103687.html> (referer: None)
+2023-06-28 12:26:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-02-medium-brown-0-16g-0-4g-101363.html> (referer: None)
+2023-06-28 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ke-may-va-mascara-may-browit-ash-brown-0-16g-1-26g-103687.html>
+{'crawl_time': '2023-06-28 12:26:32',
+ 'name': 'Chì Kẻ Mày & Mascara Mày 2in1 Browit #Ash Brown 0.16g+1.26g',
+ 'original_price': '189000 ',
+ 'price': '149000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-03-ash-brown-0-16g-0-4g-101361.html> (referer: None)
+2023-06-28 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-kissme-sieu-min-khong-troi-mau-xam-tro-0-09g-105857.html> (referer: None)
+2023-06-28 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-02-medium-brown-0-16g-0-4g-101363.html>
+{'crawl_time': '2023-06-28 12:26:32',
+ 'name': 'Kẻ Mày Cathy Doll 3 Trong 1 #02 Medium Brown 0.16g + 0.4g',
+ 'original_price': '169000 ',
+ 'price': '146000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-03-ash-brown-0-16g-0-4g-101361.html>
+{'crawl_time': '2023-06-28 12:26:32',
+ 'name': 'Kẻ Mày Cathy Doll 3 Trong 1 #03 Ash Brown 0.16g + 0.4g',
+ 'original_price': '169000 ',
+ 'price': '146000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-kissme-sieu-min-khong-troi-mau-xam-tro-0-09g-105857.html>
+{'crawl_time': '2023-06-28 12:26:32',
+ 'name': 'Chì Kẻ Mày Kissme Siêu Mịn Không Trôi 08 Xám Tro 0.09g',
+ 'original_price': '169000 ',
+ 'price': '143000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-04-gray-brown-0-16g-0-4g-101359.html> (referer: None)
+2023-06-28 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-04-gray-brown-0-16g-0-4g-101359.html>
+{'crawl_time': '2023-06-28 12:26:32',
+ 'name': 'Kẻ Mày Cathy Doll 3 Trong 1 #04 Gray Brown 0.16g + 0.4g',
+ 'original_price': '169000 ',
+ 'price': '146000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-cathy-doll-2-mau-trong-1-03-gray-brown-1g-1g-104971.html> (referer: None)
+2023-06-28 12:26:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-cathy-doll-2-mau-trong-1-03-gray-brown-1g-1g-104971.html>
+{'crawl_time': '2023-06-28 12:26:32',
+ 'name': 'Chì Kẻ Mày Cathy Doll 2 Màu Trong 1 #03 Gray Brown 1g+1g',
+ 'original_price': '85000 ',
+ 'price': '65000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-b-o-m-3-in-1-03-choco-brown-72021.html> (referer: None)
+2023-06-28 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-b-o-m-3-in-1-03-choco-brown-72021.html>
+{'crawl_time': '2023-06-28 12:26:33',
+ 'name': 'Chì Kẻ Mày B.O.M 3in1 #03 Choco Brown - Nâu Socola',
+ 'original_price': '248000 ',
+ 'price': '229000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ke-may-va-mascara-may-browit-chocolate-brown-0-16g-1-26g-103691.html> (referer: None)
+2023-06-28 12:26:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/but-nhuom-long-may-kissme-khong-troi-mau-nau-dam-0-4ml-101081.html> (referer: None)
+2023-06-28 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ke-may-va-mascara-may-browit-chocolate-brown-0-16g-1-26g-103691.html>
+{'crawl_time': '2023-06-28 12:26:33',
+ 'name': 'Chì Kẻ Mày & Mascara Mày 2in1 Browit #Chocolate Brown 0.16g+1.26g',
+ 'original_price': '189000 ',
+ 'price': '149000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-01-dark-brown-0-16g-0-4g-101365.html> (referer: None)
+2023-06-28 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/but-nhuom-long-may-kissme-khong-troi-mau-nau-dam-0-4ml-101081.html>
+{'crawl_time': '2023-06-28 12:26:33',
+ 'name': 'Bút Nhuộm Lông Mày Kissme Không Trôi Màu Nâu Đậm 0.4ml',
+ 'original_price': '189000 ',
+ 'price': '161000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ke-may-cathy-doll-3-trong-1-01-dark-brown-0-16g-0-4g-101365.html>
+{'crawl_time': '2023-06-28 12:26:33',
+ 'name': 'Kẻ Mày Cathy Doll 3 Trong 1 #01 Dark Brown 0.16g + 0.4g',
+ 'original_price': '169000 ',
+ 'price': '135000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/co-ve-chan-may-vacosi-xeo-nho-dau-cung-br05-4440.html> (referer: None)
+2023-06-28 12:26:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-cathy-doll-2-mau-trong-1-01-dark-brown-1g-1g-104977.html> (referer: None)
+2023-06-28 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/co-ve-chan-may-vacosi-xeo-nho-dau-cung-br05-4440.html>
+{'crawl_time': '2023-06-28 12:26:34',
+ 'name': 'Cọ Tán Mày Vacosi Lông Ngắn BR05',
+ 'original_price': '48000 ',
+ 'price': '41000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/set-dao-cao-long-may-kai-3-cai-89119.html> (referer: None)
+2023-06-28 12:26:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-may-kissme-heroine-dang-xoay-mau-nau-tu-nhien-0-07g-101045.html> (referer: None)
+2023-06-28 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-cathy-doll-2-mau-trong-1-01-dark-brown-1g-1g-104977.html>
+{'crawl_time': '2023-06-28 12:26:34',
+ 'name': 'Chì Kẻ Mày Cathy Doll 2 Màu Trong 1 #01 Dark Brown 1g+1g',
+ 'original_price': '85000 ',
+ 'price': '65000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/set-dao-cao-long-may-kai-3-cai-89119.html>
+{'crawl_time': '2023-06-28 12:26:34',
+ 'name': 'Set 3 Dao Cạo Lông Mày KAI Pretty Loại Chữ L',
+ 'original_price': '57000 ',
+ 'price': '56000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-may-kissme-heroine-dang-xoay-mau-nau-tu-nhien-0-07g-101045.html>
+{'crawl_time': '2023-06-28 12:26:34',
+ 'name': 'Chì Kẻ Mày Kissme Heroine Dạng Xoay Màu Nâu Tự Nhiên 0.07g',
+ 'original_price': '129000 ',
+ 'price': '115000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-lemonade-chuot-mi-chi-ke-may-2-dau-2-mon-91409.html> (referer: None)
+2023-06-28 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-lemonade-chuot-mi-chi-ke-may-2-dau-2-mon-91409.html>
+{'crawl_time': '2023-06-28 12:26:35',
+ 'name': 'Combo Lemonade Chuốt Mi + Chì Kẻ Mày 2 Đầu 2 Món',
+ 'original_price': '378000 ',
+ 'price': '326000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-05-nau-tu-nhien-5ml-4396.html> (referer: None)
+2023-06-28 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/chi-ke-chan-may-innisfree-mau-4-ash-brown-0-3g-106575.html> (referer: None)
+2023-06-28 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-may-vacosi-dinh-hinh-da-nang-05-nau-tu-nhien-5ml-4396.html>
+{'crawl_time': '2023-06-28 12:26:35',
+ 'name': 'Chì Mày Vacosi Định Hình Đa Năng 05 Nâu Tự Nhiên 5ml',
+ 'original_price': '112000 ',
+ 'price': '78000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/chi-ke-chan-may-innisfree-mau-4-ash-brown-0-3g-106575.html>
+{'crawl_time': '2023-06-28 12:26:35',
+ 'name': 'Chì Kẻ Chân Mày innisfree Màu 4 Ash Brown 0.3g',
+ 'original_price': '99000 ',
+ 'price': '93000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-chong-nang-anessa-duong-da-kiem-dau-bao-ve-hoan-hao-60ml-99221.html> (referer: None)
+2023-06-28 12:26:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-chong-nang-anessa-duong-da-kiem-dau-bao-ve-hoan-hao-60ml-99221.html>
+{'crawl_time': '2023-06-28 12:26:35',
+ 'name': 'Sữa Chống Nắng Anessa Dưỡng Da Kiềm Dầu 60ml',
+ 'original_price': '715000 ',
+ 'price': '429000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cerave-sach-sau-cho-da-thuong-den-da-dau-473ml-102959.html> (referer: None)
+2023-06-28 12:26:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-hoa-hong-khong-mui-klairs-danh-cho-da-nhay-cam-180ml-65994.html> (referer: None)
+2023-06-28 12:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cerave-sach-sau-cho-da-thuong-den-da-dau-473ml-102959.html>
+{'crawl_time': '2023-06-28 12:26:36',
+ 'name': 'Sữa Rửa Mặt CeraVe Sạch Sâu Cho Da Thường Đến Da Dầu 473ml',
+ 'original_price': '380000 ',
+ 'price': '355000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-hoa-hong-khong-mui-klairs-danh-cho-da-nhay-cam-180ml-65994.html>
+{'crawl_time': '2023-06-28 12:26:36',
+ 'name': 'Nước Hoa Hồng Klairs Không Mùi Cho Da Nhạy Cảm 180ml',
+ 'original_price': '399000 ',
+ 'price': '258000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-danh-cho-da-nhay-cam-15ml-9604.html> (referer: None)
+2023-06-28 12:26:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-danh-cho-da-nhay-cam-15ml-9604.html>
+{'crawl_time': '2023-06-28 12:26:36',
+ 'name': 'Lăn Khử Mùi EtiaXil Nhãn Xanh Cho Da Nhạy Cảm 15ml',
+ 'original_price': '320000 ',
+ 'price': '215000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-timber-sang-khoai-tu-tin-73g-89159.html> (referer: None)
+2023-06-28 12:26:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-timber-sang-khoai-tu-tin-73g-89159.html>
+{'crawl_time': '2023-06-28 12:26:37',
+ 'name': 'Sáp Khử Mùi Old Spice Giảm Tiết Mồ Hôi Hương Timber 73g',
+ 'original_price': '154000 ',
+ 'price': '123000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dung-dich-ve-sinh-phu-nu-lactacyd-odor-fresh-ngan-mui-250ml-83037.html> (referer: None)
+2023-06-28 12:26:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dung-dich-ve-sinh-phu-nu-lactacyd-odor-fresh-ngan-mui-250ml-83037.html>
+{'crawl_time': '2023-06-28 12:26:37',
+ 'name': 'Dung Dịch Vệ Sinh Phụ Nữ Lactacyd Ngăn Mùi 24H 250ml',
+ 'original_price': '73000 ',
+ 'price': '64000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-pure-sport-nang-dong-85g-3681.html> (referer: None)
+2023-06-28 12:26:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-danh-cho-da-thuong-15ml-9598.html> (referer: None)
+2023-06-28 12:26:37 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://hasaki.vn/san-pham/kem-khu-mui-dove-collagen-b3-duong-sang-deu-mau-40ml-90579.html> from <GET https://hasaki.vn/san-pham/kem-khu-mui-dove-collagen-vitamin-b3-sang-min-deu-mau-50ml-90579.html>
+2023-06-28 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-pure-sport-nang-dong-85g-3681.html>
+{'crawl_time': '2023-06-28 12:26:38',
+ 'name': 'Sáp Khử Mùi Old Spice Hương Pure Sport Năng Động 85g',
+ 'original_price': '130000 ',
+ 'price': '98000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-vichy-giup-kho-thoang-vung-da-duoi-canh-tay-72h-50ml-29250.html> (referer: None)
+2023-06-28 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-danh-cho-da-sieu-nhay-cam-15ml-10106.html> (referer: None)
+2023-06-28 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-danh-cho-da-thuong-15ml-9598.html>
+{'crawl_time': '2023-06-28 12:26:38',
+ 'name': 'Lăn Khử Mùi EtiaXil Nhãn Đỏ Cho Da Thường, Khoẻ 15ml',
+ 'original_price': '320000 ',
+ 'price': '215000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-vichy-giup-kho-thoang-vung-da-duoi-canh-tay-72h-50ml-29250.html>
+{'crawl_time': '2023-06-28 12:26:38',
+ 'name': 'Lăn Khử Mùi Vichy Ngăn Mồ Hôi, Giữ Khô Thoáng Suốt 72h 50ml',
+ 'original_price': '295000 ',
+ 'price': '210000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-danh-cho-da-sieu-nhay-cam-15ml-10106.html>
+{'crawl_time': '2023-06-28 12:26:38',
+ 'name': 'Lăn Khử Mùi EtiaXil Nhãn Nâu Cho Da Siêu Nhạy Cảm 15ml',
+ 'original_price': '320000 ',
+ 'price': '215000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-fiji-thu-gian-nhe-nhang-73g-89161.html> (referer: None)
+2023-06-28 12:26:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-giam-tham-nach-khu-mui-cleo-duong-sang-6-trong-1-35g-100213.html> (referer: None)
+2023-06-28 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-fiji-thu-gian-nhe-nhang-73g-89161.html>
+{'crawl_time': '2023-06-28 12:26:38',
+ 'name': 'Sáp Khử Mùi Old Spice Giảm Tiết Mồ Hôi Hương Fiji 73g',
+ 'original_price': '154000 ',
+ 'price': '123000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-giam-tham-nach-khu-mui-cleo-duong-sang-6-trong-1-35g-100213.html>
+{'crawl_time': '2023-06-28 12:26:38',
+ 'name': 'Kem Giảm Thâm Nách & Khử Mùi Cléo Dưỡng Sáng 6 Trong 1 35g',
+ 'original_price': '186000 ',
+ 'price': '154000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-khu-mui-etiaxil-dang-phun-suong-48h-mau-xanh-150ml-75990.html> (referer: None)
+2023-06-28 12:26:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-khu-mui-etiaxil-dang-phun-suong-48h-mau-xanh-150ml-75990.html>
+{'crawl_time': '2023-06-28 12:26:39',
+ 'name': 'Xịt Khử Mùi EtiaXil Dạng Phun Sương 48H Màu Xanh 150ml',
+ 'original_price': '249000 ',
+ 'price': '185000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-nivea-huong-hoa-hong-40ml-86235.html> (referer: None)
+2023-06-28 12:26:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-nivea-huong-hoa-hong-40ml-86235.html>
+{'crawl_time': '2023-06-28 12:26:39',
+ 'name': 'Lăn Khử Mùi Nivea Serum Sáng Mịn Hương Hoa Hồng 40ml',
+ 'original_price': '108000 ',
+ 'price': '80000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-ngan-mui-nu-nivea-sang-da-mo-vet-tham-150ml-3236.html> (referer: None)
+2023-06-28 12:26:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-cho-nam-old-spice-fresh-85g-89155.html> (referer: None)
+2023-06-28 12:26:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-wolfthorn-loi-cuon-doc-dao-73g-98101.html> (referer: None)
+2023-06-28 12:26:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-ngan-mui-nu-nivea-sang-da-mo-vet-tham-150ml-3236.html>
+{'crawl_time': '2023-06-28 12:26:39',
+ 'name': 'Xịt Khử Mùi Nivea Cho Nữ Sáng Da, Mờ Vết Thâm 150ml',
+ 'original_price': '108000 ',
+ 'price': '79000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-cho-nam-old-spice-fresh-85g-89155.html>
+{'crawl_time': '2023-06-28 12:26:40',
+ 'name': 'Sáp Khử Mùi Old Spice Hương Fresh Tươi Mát 85g',
+ 'original_price': '130000 ',
+ 'price': '98000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-wolfthorn-loi-cuon-doc-dao-73g-98101.html>
+{'crawl_time': '2023-06-28 12:26:40',
+ 'name': 'Sáp Khử Mùi Old Spice Giảm Tiết Mồ Hôi Hương Wolfthorn 73g',
+ 'original_price': '154000 ',
+ 'price': '117000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-khu-mui-secret-giam-tiet-mo-hoi-huong-lavender-73g-3226.html> (referer: None)
+2023-06-28 12:26:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-hang-ngay-cho-moi-loai-da-50ml-75984.html> (referer: None)
+2023-06-28 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-khu-mui-secret-giam-tiet-mo-hoi-huong-lavender-73g-3226.html>
+{'crawl_time': '2023-06-28 12:26:40',
+ 'name': 'Gel Khử Mùi Secret Giảm Tiết Mồ Hôi Hương Lavender 73g',
+ 'original_price': '125000 ',
+ 'price': '87000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-etiaxil-hang-ngay-cho-moi-loai-da-50ml-75984.html>
+{'crawl_time': '2023-06-28 12:26:40',
+ 'name': 'Lăn Khử Mùi EtiaXil Hàng Ngày Cho Mọi Loại Da 50ml',
+ 'original_price': '249000 ',
+ 'price': '209000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dung-dich-ve-sinh-phu-nu-lactacyd-odor-fresh-ngan-mui-150ml-41864.html> (referer: None)
+2023-06-28 12:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dung-dich-ve-sinh-phu-nu-lactacyd-odor-fresh-ngan-mui-150ml-41864.html>
+{'crawl_time': '2023-06-28 12:26:41',
+ 'name': 'Dung Dịch Vệ Sinh Phụ Nữ Lactacyd Ngăn Mùi 24H 150ml',
+ 'original_price': '49000 ',
+ 'price': '45000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-bearglove-manh-me-ban-linh-73g-98103.html> (referer: None)
+2023-06-28 12:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sap-khu-mui-old-spice-huong-bearglove-manh-me-ban-linh-73g-98103.html>
+{'crawl_time': '2023-06-28 12:26:41',
+ 'name': 'Sáp Khử Mùi Old Spice Giảm Tiết Mồ Hôi Hương Bearglove 73g',
+ 'original_price': '154000 ',
+ 'price': '122000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-khu-mui-dove-duong-da-sang-min-huong-phan-thom-150ml-92227.html> (referer: None)
+2023-06-28 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-khu-mui-dove-collagen-b3-duong-sang-deu-mau-40ml-90579.html> (referer: None)
+2023-06-28 12:26:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-khu-mui-secret-giam-tiet-mo-hoi-protecting-powder-73g-89169.html> (referer: None)
+2023-06-28 12:26:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-khu-mui-dove-duong-da-sang-min-huong-phan-thom-150ml-92227.html>
+{'crawl_time': '2023-06-28 12:26:41',
+ 'name': 'Xịt Khử Mùi Dove Dưỡng Da Sáng Mịn Hương Phấn Thơm 150ml',
+ 'original_price': '125000 ',
+ 'price': '86000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-khu-mui-dove-collagen-b3-duong-sang-deu-mau-40ml-90579.html>
+{'crawl_time': '2023-06-28 12:26:42',
+ 'name': 'Serum Ngăn Mùi Dove Giúp Da Sáng Mịn Đều Màu 40ml',
+ 'original_price': '97000 ',
+ 'price': '70000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-khu-mui-secret-giam-tiet-mo-hoi-protecting-powder-73g-89169.html>
+{'crawl_time': '2023-06-28 12:26:42',
+ 'name': 'Gel Khử Mùi Secret Giảm Tiết Mồ Hôi Protecting Powder 73g',
+ 'original_price': '125000 ',
+ 'price': '101000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-ngan-mui-nu-nivea-ngoc-trai-quyen-ru-150ml-86297.html> (referer: None)
+2023-06-28 12:26:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-ngan-mui-nivea-serum-sang-min-huong-hoa-sakura-40ml-86291.html> (referer: None)
+2023-06-28 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-ngan-mui-nu-nivea-ngoc-trai-quyen-ru-150ml-86297.html>
+{'crawl_time': '2023-06-28 12:26:42',
+ 'name': 'Xịt Khử Mùi Nivea Ngọc Trai Dưỡng Da Sáng Mịn 150ml',
+ 'original_price': '108000 ',
+ 'price': '83000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-ngan-mui-nivea-serum-sang-min-huong-hoa-sakura-40ml-86291.html>
+{'crawl_time': '2023-06-28 12:26:42',
+ 'name': 'Lăn Khử Mùi Nivea Serum Sáng Mịn Hương Hoa Sakura 40ml',
+ 'original_price': '108000 ',
+ 'price': '96000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-vichy-kho-thoang-vung-da-duoi-canh-tay-48h-50ml-37752.html> (referer: None)
+2023-06-28 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-khu-mui-gillette-giam-tiet-mo-hoi-huong-cool-wave-107g-2482.html> (referer: None)
+2023-06-28 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-vichy-kho-thoang-vung-da-duoi-canh-tay-48h-50ml-37752.html>
+{'crawl_time': '2023-06-28 12:26:43',
+ 'name': 'Lăn Khử Mùi Vichy Ngăn Mồ Hôi, Giữ Khô Thoáng Suốt 48H 50ml',
+ 'original_price': '295000 ',
+ 'price': '241000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-khu-mui-gillette-giam-tiet-mo-hoi-huong-cool-wave-107g-2482.html>
+{'crawl_time': '2023-06-28 12:26:43',
+ 'name': 'Gel Khử Mùi Gillette Giảm Tiết Mồ Hôi Hương Cool Wave 107g',
+ 'original_price': '131000 ',
+ 'price': '98000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-khu-mui-mo-hoi-chan-etiaxil-100ml-75986.html> (referer: None)
+2023-06-28 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-khu-mui-dove-duong-da-sang-min-huong-diu-nhe-150ml-92229.html> (referer: None)
+2023-06-28 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-khu-mui-mo-hoi-chan-etiaxil-100ml-75986.html>
+{'crawl_time': '2023-06-28 12:26:43',
+ 'name': 'Xịt Khử Mùi Chân EtiaXil Ngăn Mồ Hôi & Giảm Mùi Hôi 100ml',
+ 'original_price': '249000 ',
+ 'price': '209000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:43 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-khu-mui-secret-giam-tiet-mo-hoi-unscented-khong-mui-73g-89435.html> (referer: None)
+2023-06-28 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-khu-mui-dove-duong-da-sang-min-huong-diu-nhe-150ml-92229.html>
+{'crawl_time': '2023-06-28 12:26:43',
+ 'name': 'Xịt Khử Mùi Dove Dưỡng Da Sáng Mịn Hương Dịu Nhẹ 150ml',
+ 'original_price': '125000 ',
+ 'price': '89000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:43 [scrapy.downloadermiddlewares.redirect] DEBUG: Redirecting (302) to <GET https://hasaki.vn/san-pham/serum-ngan-mui-dove-giup-mo-tham-thu-nho-lo-chan-long-40ml-90593.html> from <GET https://hasaki.vn/san-pham/kem-khu-mui-dove-collagen-vitamin-e-khit-lo-chan-long-50ml-90593.html>
+2023-06-28 12:26:43 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-khu-mui-secret-giam-tiet-mo-hoi-unscented-khong-mui-73g-89435.html>
+{'crawl_time': '2023-06-28 12:26:43',
+ 'name': 'Gel Khử Mùi Secret Giảm Tiết Mồ Hôi Unscented Không Mùi 73g',
+ 'original_price': '125000 ',
+ 'price': '101000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-ngan-mui-dove-duong-sang-huong-dua-leo-tra-xanh-150ml-92225.html> (referer: None)
+2023-06-28 12:26:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-deonatulle-da-khoang-soft-stone-double-20g-99519.html> (referer: None)
+2023-06-28 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-ngan-mui-dove-duong-sang-huong-dua-leo-tra-xanh-150ml-92225.html>
+{'crawl_time': '2023-06-28 12:26:44',
+ 'name': 'Xịt Khử Mùi Dove Dưỡng Da Sáng Mịn Dưa Leo & Trà Xanh 150ml',
+ 'original_price': '125000 ',
+ 'price': '99000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-deonatulle-da-khoang-soft-stone-double-20g-99519.html>
+{'crawl_time': '2023-06-28 12:26:44',
+ 'name': 'Lăn Khử Mùi Deonatulle Đá Khoáng Trắng Không Màu 20g',
+ 'original_price': '298000 ',
+ 'price': '209000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:44 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-ngan-mo-hoi-perspi-guard-hieu-qua-toi-uu-30ml-94657.html> (referer: None)
+2023-06-28 12:26:44 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-ngan-mo-hoi-perspi-guard-hieu-qua-toi-uu-30ml-94657.html>
+{'crawl_time': '2023-06-28 12:26:44',
+ 'name': 'Lăn Khử Mùi Perspi-Guard Hiệu Quả Tối Ưu 30ml',
+ 'original_price': '219000 ',
+ 'price': '174000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-ngoc-trai-nivea-50ml-8623.html> (referer: None)
+2023-06-28 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-ngoc-trai-nivea-50ml-8623.html>
+{'crawl_time': '2023-06-28 12:26:45',
+ 'name': 'Lăn Khử Mùi Nivea Ngọc Trai Dưỡng Da Sáng Mịn 50ml',
+ 'original_price': '92000 ',
+ 'price': '76000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mieng-dan-mui-lot-mun-biore-than-hoat-tinh-75940.html> (referer: None)
+2023-06-28 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-ngan-mui-nivea-serum-duong-sang-da-huong-hoa-hong-hokkaido-150ml-85913.html> (referer: None)
+2023-06-28 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mieng-dan-mui-lot-mun-biore-than-hoat-tinh-75940.html>
+{'crawl_time': '2023-06-28 12:26:45',
+ 'name': 'Miếng Dán Mũi Lột Mụn Bioré Than Hoạt Tính (4 Miếng)',
+ 'original_price': '25000 ',
+ 'price': '23000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-ngan-mui-nivea-serum-duong-sang-da-huong-hoa-hong-hokkaido-150ml-85913.html>
+{'crawl_time': '2023-06-28 12:26:45',
+ 'name': 'Xịt Khử Mùi Nivea Serum Sáng Da Hoa Hồng Hokkaido 150ml',
+ 'original_price': '125000 ',
+ 'price': '94000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-ngan-mui-nivea-sang-min-se-khit-lo-chan-long-50ml-99373.html> (referer: None)
+2023-06-28 12:26:45 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-ngan-mui-nivea-sang-min-se-khit-lo-chan-long-50ml-99373.html>
+{'crawl_time': '2023-06-28 12:26:45',
+ 'name': 'Lăn Khử Mùi Nivea Sáng Mịn Se Khít Lỗ Chân Lông 50ml',
+ 'original_price': '92000 ',
+ 'price': '81000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:45 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-deonatulle-soft-stone-da-khoang-xanh-20g-99513.html> (referer: None)
+2023-06-28 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-deonatulle-soft-stone-da-khoang-xanh-20g-99513.html>
+{'crawl_time': '2023-06-28 12:26:46',
+ 'name': 'Lăn Khử Mùi Deonatulle Đá Khoáng Xanh Sáng Da 20g',
+ 'original_price': '310000 ',
+ 'price': '208000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/lan-khu-mui-cho-nam-old-spice-original-85g-89157.html> (referer: None)
+2023-06-28 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/lan-khu-mui-cho-nam-old-spice-original-85g-89157.html>
+{'crawl_time': '2023-06-28 12:26:46',
+ 'name': 'Sáp Khử Mùi Old Spice Hương Original Truyền Thống 85g',
+ 'original_price': '130000 ',
+ 'price': '118000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/xit-khu-mui-refre-natural-huong-tra-xanh-30ml-70357.html> (referer: None)
+2023-06-28 12:26:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-silkygirl-02-hong-dao-ngot-ngao-101819.html> (referer: None)
+2023-06-28 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/xit-khu-mui-refre-natural-huong-tra-xanh-30ml-70357.html>
+{'crawl_time': '2023-06-28 12:26:46',
+ 'name': 'Xịt Khử Mùi Refre Natural Hương Trà Xanh 30ml',
+ 'original_price': '62000 ',
+ 'price': '47000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:46 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-silkygirl-02-hong-dao-ngot-ngao-101819.html>
+{'crawl_time': '2023-06-28 12:26:46',
+ 'name': 'Phấn Má Hồng Silkygirl 02 Hồng Đào Ngọt Ngào',
+ 'original_price': '168000 ',
+ 'price': '133000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:46 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-silkygirl-dang-thoi-mau-cam-dao-04-nectarine-4g-107303.html> (referer: None)
+2023-06-28 12:26:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-silkygirl-dang-thoi-mau-cam-dao-04-nectarine-4g-107303.html>
+{'crawl_time': '2023-06-28 12:26:47',
+ 'name': 'Má Hồng Silkygirl Dạng Thỏi Màu Cam Đào 04 Nectarine 4g',
+ 'original_price': '188000 ',
+ 'price': '175000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/co-phu-phan-ma-hong-dau-tron-vacosi-m27-75878.html> (referer: None)
+2023-06-28 12:26:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/co-phu-phan-ma-hong-dau-tron-vacosi-m27-75878.html>
+{'crawl_time': '2023-06-28 12:26:47',
+ 'name': 'Cọ Phủ & Má Hồng Vacosi Đầu Tròn M27',
+ 'original_price': '117000 ',
+ 'price': '102000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/co-ma-hong-phu-vacosi-dau-tron-m03-4418.html> (referer: None)
+2023-06-28 12:26:47 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/co-ma-hong-phu-vacosi-dau-tron-m03-4418.html>
+{'crawl_time': '2023-06-28 12:26:47',
+ 'name': 'Cọ Má Hồng & Phủ Vacosi Đầu Tròn M03',
+ 'original_price': '99000 ',
+ 'price': '86000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-04-morning-dear-6g-105009.html> (referer: None)
+2023-06-28 12:26:47 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/serum-ngan-mui-dove-giup-mo-tham-thu-nho-lo-chan-long-40ml-90593.html> (referer: None)
+2023-06-28 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-04-morning-dear-6g-105009.html>
+{'crawl_time': '2023-06-28 12:26:48',
+ 'name': 'Má Hồng Cathy Doll Dạng Kem 04 Morning Dear 6g',
+ 'original_price': '159000 ',
+ 'price': '125000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/serum-ngan-mui-dove-giup-mo-tham-thu-nho-lo-chan-long-40ml-90593.html>
+{'crawl_time': '2023-06-28 12:26:48',
+ 'name': 'Serum Ngăn Mùi Dove Giúp Mờ Thâm Thu Nhỏ Lỗ Chân Lông 40ml',
+ 'original_price': '97000 ',
+ 'price': '83000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-silkygirl-dang-thoi-mau-hong-dao-01-peach-4g-78918.html> (referer: None)
+2023-06-28 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-silkygirl-dang-thoi-mau-hong-dao-01-peach-4g-78918.html>
+{'crawl_time': '2023-06-28 12:26:48',
+ 'name': 'Má Hồng Silkygirl Dạng Thỏi Màu Hồng Đào 01 Peach 4g',
+ 'original_price': '188000 ',
+ 'price': '175000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-02-gala-peach-6g-104973.html> (referer: None)
+2023-06-28 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/co-khoi-ma-hong-vacosi-m09-3047.html> (referer: None)
+2023-06-28 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-02-gala-peach-6g-104973.html>
+{'crawl_time': '2023-06-28 12:26:48',
+ 'name': 'Má Hồng Cathy Doll Dạng Kem 02 Gala Peach 6g',
+ 'original_price': '159000 ',
+ 'price': '125000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:48 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/co-khoi-ma-hong-vacosi-m09-3047.html>
+{'crawl_time': '2023-06-28 12:26:48',
+ 'name': 'Cọ Khối & Má Hồng Vacosi M09',
+ 'original_price': '100000 ',
+ 'price': '86000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:48 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-dang-thach-silkygirl-mau-hong-dao-02-lollipop-3g-90629.html> (referer: None)
+2023-06-28 12:26:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-03-joy-summer-6g-105007.html> (referer: None)
+2023-06-28 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-dang-thach-silkygirl-mau-hong-dao-02-lollipop-3g-90629.html>
+{'crawl_time': '2023-06-28 12:26:49',
+ 'name': 'Má Hồng Dạng Thạch Silkygirl Màu Hồng Đào 02 Lollipop 3g',
+ 'original_price': '168000 ',
+ 'price': '155000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-03-joy-summer-6g-105007.html>
+{'crawl_time': '2023-06-28 12:26:49',
+ 'name': 'Má Hồng Cathy Doll Dạng Kem 03 Joy Summer 6g',
+ 'original_price': '159000 ',
+ 'price': '125000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:49 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-vacosi-07-candy-peach-5g-8231.html> (referer: None)
+2023-06-28 12:26:49 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-vacosi-07-candy-peach-5g-8231.html>
+{'crawl_time': '2023-06-28 12:26:49',
+ 'name': 'Phấn Má Hồng Vacosi 07 Candy Peach 5g',
+ 'original_price': '94000 ',
+ 'price': '82000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-07-salmon-roll-3-5g-92751.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-silkygirl-04-do-hong-rung-dong-101817.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-07-salmon-roll-3-5g-92751.html>
+{'crawl_time': '2023-06-28 12:26:50',
+ 'name': 'Son Tint Và Má Hồng Cathy Doll 07 Salmon Roll 3.5g',
+ 'original_price': '165000 ',
+ 'price': '130000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-vacosi-03-sweet-peach-5g-8221.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-silkygirl-04-do-hong-rung-dong-101817.html>
+{'crawl_time': '2023-06-28 12:26:50',
+ 'name': 'Phấn Má Hồng Silkygirl 04 Đỏ Hồng Rung Động',
+ 'original_price': '168000 ',
+ 'price': '134000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-vacosi-03-sweet-peach-5g-8221.html>
+{'crawl_time': '2023-06-28 12:26:50',
+ 'name': 'Phấn Má Hồng Vacosi 03 Sweet Peach 5g',
+ 'original_price': '94000 ',
+ 'price': '82000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-dang-thach-silkygirl-mau-cam-sua-03-popsicle-3g-90631.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-hoa-hong-skin1004-rau-ma-duong-sang-da-210ml-98711.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/co-ma-hong-mini-vacosi-m19-103189.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-mau-01-charming-pink-3-5g-92771.html> (referer: None)
+2023-06-28 12:26:50 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-dang-thach-silkygirl-mau-cam-sua-03-popsicle-3g-90631.html>
+{'crawl_time': '2023-06-28 12:26:50',
+ 'name': 'Má Hồng Dạng Thạch Silkygirl Màu Cam Sữa 03 Popsicle 3g',
+ 'original_price': '168000 ',
+ 'price': '133000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-hoa-hong-skin1004-rau-ma-duong-sang-da-210ml-98711.html>
+{'crawl_time': '2023-06-28 12:26:51',
+ 'name': 'Nước Hoa Hồng Skin1004 Rau Má Dưỡng Sáng Da 210ml',
+ 'original_price': '560000 ',
+ 'price': '420000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/co-ma-hong-mini-vacosi-m19-103189.html>
+{'crawl_time': '2023-06-28 12:26:51',
+ 'name': '[Mini] Cọ Má Hồng Vacosi - M19',
+ 'original_price': '39960 ',
+ 'price': '36000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-mau-01-charming-pink-3-5g-92771.html>
+{'crawl_time': '2023-06-28 12:26:51',
+ 'name': 'Son Tint Và Má Hồng Cathy Doll 01 Charming Pink 3.5g',
+ 'original_price': '165000 ',
+ 'price': '135000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-05-gonna-punch-6g-105011.html> (referer: None)
+2023-06-28 12:26:51 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-cathy-doll-dang-kem-05-gonna-punch-6g-105011.html>
+{'crawl_time': '2023-06-28 12:26:51',
+ 'name': 'Má Hồng Cathy Doll Dạng Kem 05 Gonna Punch 6g',
+ 'original_price': '159000 ',
+ 'price': '125000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:51 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-australis-mode-cupid-blush-mau-cam-4g-102847.html> (referer: None)
+2023-06-28 12:26:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-australis-mode-cupid-blush-mau-cam-4g-102847.html>
+{'crawl_time': '2023-06-28 12:26:52',
+ 'name': 'Phấn Má Hồng Australis Mode Cupid Blush Màu Cam 4g',
+ 'original_price': '143000 ',
+ 'price': '114000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ma-hong-dang-nen-pk01-3-5g-12294.html> (referer: None)
+2023-06-28 12:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-vacosi-pk05-pink-kiss-8g-64191.html> (referer: None)
+2023-06-28 12:26:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ma-hong-dang-nen-pk01-3-5g-12294.html>
+{'crawl_time': '2023-06-28 12:26:52',
+ 'name': 'Má Hồng Dạng Nén Naris Cosmetics PK01 3.5g',
+ 'original_price': '125000 ',
+ 'price': '106000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-vacosi-pk05-pink-kiss-8g-64191.html>
+{'crawl_time': '2023-06-28 12:26:52',
+ 'name': 'Phấn Má Hồng Vacosi Siêu Mịn PK05 Pink Kiss 8g',
+ 'original_price': '165000 ',
+ 'price': '155000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-too-cool-for-school-03-mau-hong-nhat-9g-95531.html> (referer: None)
+2023-06-28 12:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-vacosi-02-sweet-orange-5g-8217.html> (referer: None)
+2023-06-28 12:26:52 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-maybelline-mau-do-ruou-50-wine-4-5g-74242.html> (referer: None)
+2023-06-28 12:26:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-too-cool-for-school-03-mau-hong-nhat-9g-95531.html>
+{'crawl_time': '2023-06-28 12:26:52',
+ 'name': 'Phấn Má Hồng Too Cool For School 03 Màu Hồng Nhạt 9g',
+ 'original_price': '340000 ',
+ 'price': '275000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:52 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-vacosi-02-sweet-orange-5g-8217.html>
+{'crawl_time': '2023-06-28 12:26:52',
+ 'name': 'Phấn Má Hồng Vacosi 02 Sweet Orange 5g',
+ 'original_price': '94000 ',
+ 'price': '79000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-maybelline-mau-do-ruou-50-wine-4-5g-74242.html>
+{'crawl_time': '2023-06-28 12:26:53',
+ 'name': 'Phấn Má Hồng Maybelline Màu Đỏ Rượu 50 Wine 4.5g',
+ 'original_price': '128000 ',
+ 'price': '110000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-11-hold-on-red-3-5g-92757.html> (referer: None)
+2023-06-28 12:26:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-11-hold-on-red-3-5g-92757.html>
+{'crawl_time': '2023-06-28 12:26:53',
+ 'name': 'Son Tint Và Má Hồng Cathy Doll 11 Hold on Red 3.5g',
+ 'original_price': '165000 ',
+ 'price': '130000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-horus-03-peach-orange-mau-cam-dao-4g-100489.html> (referer: None)
+2023-06-28 12:26:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-horus-03-peach-orange-mau-cam-dao-4g-100489.html>
+{'crawl_time': '2023-06-28 12:26:53',
+ 'name': 'Phấn Má Hồng Horus 03 Peach Orange Màu Cam Đào 4g',
+ 'original_price': '79000 ',
+ 'price': '59000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-too-cool-for-school-02-mau-hong-dam-9g-95529.html> (referer: None)
+2023-06-28 12:26:53 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-too-cool-for-school-02-mau-hong-dam-9g-95529.html>
+{'crawl_time': '2023-06-28 12:26:53',
+ 'name': 'Phấn Má Hồng Too Cool For School 02 Màu Hồng Đậm 9g',
+ 'original_price': '340000 ',
+ 'price': '270000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:53 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-cathy-doll-min-li-04-pink-idol-6g-92795.html> (referer: None)
+2023-06-28 12:26:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-cathy-doll-min-li-04-pink-idol-6g-92795.html>
+{'crawl_time': '2023-06-28 12:26:54',
+ 'name': 'Phấn Má Hồng Cathy Doll Mịn Lì 04 Pink Idol 6g',
+ 'original_price': '159000 ',
+ 'price': '125000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-horus-02-coral-pink-mau-hong-dao-4g-100487.html> (referer: None)
+2023-06-28 12:26:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/co-ma-hong-dep-vacosi-fp02-75764.html> (referer: None)
+2023-06-28 12:26:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-horus-02-coral-pink-mau-hong-dao-4g-100487.html>
+{'crawl_time': '2023-06-28 12:26:54',
+ 'name': 'Phấn Má Hồng Horus 02 Coral Pink Màu Hồng Đào 4g',
+ 'original_price': '79000 ',
+ 'price': '59000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/co-ma-hong-dep-vacosi-fp02-75764.html>
+{'crawl_time': '2023-06-28 12:26:54',
+ 'name': 'Cọ Má Hồng Dẹp Vacosi Pro FP02',
+ 'original_price': '150000 ',
+ 'price': '123000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-mau-08-chic-sand-3-5g-92755.html> (referer: None)
+2023-06-28 12:26:54 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-hoa-hong-cosrx-rau-ma-khong-con-lam-giam-mun-150ml-98713.html> (referer: None)
+2023-06-28 12:26:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-mau-08-chic-sand-3-5g-92755.html>
+{'crawl_time': '2023-06-28 12:26:54',
+ 'name': 'Son Tint Và Má Hồng Cathy Doll 08 Chic Sand 3.5g',
+ 'original_price': '165000 ',
+ 'price': '135000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:54 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-hoa-hong-cosrx-rau-ma-khong-con-lam-giam-mun-150ml-98713.html>
+{'crawl_time': '2023-06-28 12:26:54',
+ 'name': 'Nước Hoa Hồng Cosrx Rau Má Không Cồn Làm Giảm Mụn 150ml',
+ 'original_price': '290000 ',
+ 'price': '225000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-cathy-doll-min-li-01-buddy-beige-6g-92767.html> (referer: None)
+2023-06-28 12:26:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-cathy-doll-min-li-01-buddy-beige-6g-92767.html>
+{'crawl_time': '2023-06-28 12:26:55',
+ 'name': 'Phấn Má Hồng Cathy Doll Mịn Lì 01 Buddy Beige 6g',
+ 'original_price': '159000 ',
+ 'price': '149000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-06-peach-up-3-5g-92749.html> (referer: None)
+2023-06-28 12:26:55 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-va-ma-hong-cathy-doll-06-peach-up-3-5g-92749.html>
+{'crawl_time': '2023-06-28 12:26:55',
+ 'name': 'Son Tint Và Má Hồng Cathy Doll 06 Peach Up 3.5g',
+ 'original_price': '165000 ',
+ 'price': '130000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:55 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-maybelline-min-li-chuan-mau-10-brave-4-5g-104635.html> (referer: None)
+2023-06-28 12:26:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dung-dich-tay-da-chet-paula-s-choice-bha-2-30ml-2364.html> (referer: None)
+2023-06-28 12:26:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-maybelline-min-li-chuan-mau-10-brave-4-5g-104635.html>
+{'crawl_time': '2023-06-28 12:26:56',
+ 'name': 'Phấn Má Hồng Maybelline Mịn Lì Chuẩn Màu 10 Brave 4.5g',
+ 'original_price': '148000 ',
+ 'price': '112000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-tay-da-chet-toan-than-cocoon-tu-ca-phe-dak-lak-2x200ml-97567.html> (referer: None)
+2023-06-28 12:26:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dung-dich-tay-da-chet-paula-s-choice-bha-2-30ml-2364.html>
+{'crawl_time': '2023-06-28 12:26:56',
+ 'name': 'Dung Dịch Tẩy Da Chết Paula’s Choice 2% BHA 30ml',
+ 'original_price': '399000 ',
+ 'price': '239000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tui-refill-tay-te-bao-chet-toan-than-cocoon-sach-da-600ml-99505.html> (referer: None)
+2023-06-28 12:26:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-84643.html> (referer: None)
+2023-06-28 12:26:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-tay-da-chet-toan-than-cocoon-tu-ca-phe-dak-lak-2x200ml-97567.html>
+{'crawl_time': '2023-06-28 12:26:56',
+ 'name': 'Combo Tẩy Tế Bào Chết Toàn Thân Cocoon Cà Phê Đắk Lắk 200mlx2',
+ 'original_price': '230000 ',
+ 'price': '184000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tui-refill-tay-te-bao-chet-toan-than-cocoon-sach-da-600ml-99505.html>
+{'crawl_time': '2023-06-28 12:26:56',
+ 'name': 'Túi Refill Tẩy Tế Bào Chết Toàn Thân Cocoon Sạch Da 600ml',
+ 'original_price': '325000 ',
+ 'price': '278000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:56 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ca-phe-dak-lak-tay-da-chet-toan-than-cocoon-200ml-84643.html>
+{'crawl_time': '2023-06-28 12:26:56',
+ 'name': 'Tẩy Tế Bào Chết Toàn Thân Cocoon Cà Phê Đắk Lắk 200ml',
+ 'original_price': '125000 ',
+ 'price': '98000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:56 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ca-phe-dak-lak-lam-sach-da-chet-cho-mat-cocoon-150ml-92215.html> (referer: None)
+2023-06-28 12:26:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ca-phe-dak-lak-lam-sach-da-chet-cho-mat-cocoon-150ml-92215.html>
+{'crawl_time': '2023-06-28 12:26:57',
+ 'name': 'Tẩy Tế Bào Chết Da Mặt Cocoon Cà Phê Đắk Lắk 150ml',
+ 'original_price': '165000 ',
+ 'price': '141000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dung-dich-tay-da-chet-paula-s-choice-bha-2-118ml-2334.html> (referer: None)
+2023-06-28 12:26:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dung-dich-tay-da-chet-paula-s-choice-bha-2-118ml-2334.html>
+{'crawl_time': '2023-06-28 12:26:57',
+ 'name': 'Dung Dịch Tẩy Da Chết Paula’s Choice 2% BHA 118ml',
+ 'original_price': '949000 ',
+ 'price': '599000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-da-chet-toan-than-exclusive-cosmetic-que-hoi-cafe-380g-88671.html> (referer: None)
+2023-06-28 12:26:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-da-chet-toan-than-exclusive-cosmetic-que-hoi-cafe-380g-88671.html>
+{'crawl_time': '2023-06-28 12:26:57',
+ 'name': 'Tẩy Da Chết Toàn Thân Exclusive Cosmetic Quế Hồi Cafe 380g',
+ 'original_price': '149000 ',
+ 'price': '89000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-tay-te-bao-chet-huxley-30g-79254.html> (referer: None)
+2023-06-28 12:26:57 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-tay-te-bao-chet-huxley-30g-79254.html>
+{'crawl_time': '2023-06-28 12:26:57',
+ 'name': 'Mặt Nạ Tẩy Tế Bào Chết Huxley 30g',
+ 'original_price': '90000 ',
+ 'price': '59000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/smoothie-tay-da-chet-dove-huong-luu-do-298g-106207.html> (referer: None)
+2023-06-28 12:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-eucerin-danh-cho-da-mun-100ml-53668.html> (referer: None)
+2023-06-28 12:26:57 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-moi-loai-da-120g-11034.html> (referer: None)
+2023-06-28 12:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/smoothie-tay-da-chet-dove-huong-luu-do-298g-106207.html>
+{'crawl_time': '2023-06-28 12:26:58',
+ 'name': 'Smoothie Tẩy Da Chết Dove Hương Lựu Đỏ 298g',
+ 'original_price': '199000 ',
+ 'price': '145000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-eucerin-danh-cho-da-mun-100ml-53668.html>
+{'crawl_time': '2023-06-28 12:26:58',
+ 'name': 'Tẩy Tế Bào Chết Eucerin Dành Cho Da Nhờn Mụn 100ml',
+ 'original_price': '389000 ',
+ 'price': '312000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-moi-loai-da-120g-11034.html>
+{'crawl_time': '2023-06-28 12:26:58',
+ 'name': 'Tẩy Tế Bào Chết Rosette Cho Mọi Loại Da 120g',
+ 'original_price': '170000 ',
+ 'price': '88000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/smoothie-tay-da-chet-dove-duong-nau-huong-dua-298g-106205.html> (referer: None)
+2023-06-28 12:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-moi-loai-da-180g-84201.html> (referer: None)
+2023-06-28 12:26:58 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/smoothie-tay-da-chet-dove-duong-nau-huong-dua-298g-106205.html>
+{'crawl_time': '2023-06-28 12:26:58',
+ 'name': 'Smoothie Tẩy Da Chết Dove Đường Nâu & Hương Dừa 298g',
+ 'original_price': '250000 ',
+ 'price': '158000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:58 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/smoothie-tay-da-chet-dove-huong-hoa-anh-dao-298g-106203.html> (referer: None)
+2023-06-28 12:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-moi-loai-da-180g-84201.html>
+{'crawl_time': '2023-06-28 12:26:59',
+ 'name': 'Tẩy Tế Bào Chết Rosette Cho Mọi Loại Da 180g',
+ 'original_price': '175000 ',
+ 'price': '123000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/smoothie-tay-da-chet-dove-huong-hoa-anh-dao-298g-106203.html>
+{'crawl_time': '2023-06-28 12:26:59',
+ 'name': 'Smoothie Tẩy Da Chết Dove Hương Hoa Anh Đào 298g',
+ 'original_price': '199000 ',
+ 'price': '146000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-tay-te-bao-chet-tra-xanh-lam-giam-mun-dau-den-st-ives-170g-1971.html> (referer: None)
+2023-06-28 12:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-tay-te-bao-chet-tra-xanh-lam-giam-mun-dau-den-st-ives-170g-1971.html>
+{'crawl_time': '2023-06-28 12:26:59',
+ 'name': 'Sữa Rửa Mặt St.Ives Tẩy Tế Bào Chết Trà Xanh & Than Tre 170g',
+ 'original_price': '135000 ',
+ 'price': '111000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-tay-te-bao-chet-la-roche-posay-cho-da-nhay-cam-50ml-73506.html> (referer: None)
+2023-06-28 12:26:59 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-da-dau-organic-shop-tu-sung-hanh-nhan-75ml-102553.html> (referer: None)
+2023-06-28 12:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-tay-te-bao-chet-la-roche-posay-cho-da-nhay-cam-50ml-73506.html>
+{'crawl_time': '2023-06-28 12:26:59',
+ 'name': 'Gel Tẩy Tế Bào Chết La Roche-Posay Cho Da Nhạy Cảm 50ml',
+ 'original_price': '475000 ',
+ 'price': '390000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:26:59 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-da-dau-organic-shop-tu-sung-hanh-nhan-75ml-102553.html>
+{'crawl_time': '2023-06-28 12:26:59',
+ 'name': 'Tẩy Tế Bào Chết Da Đầu Organic Shop Kiềm Dầu 75ml',
+ 'original_price': '199000 ',
+ 'price': '137000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-tay-te-bao-chet-bio-essence-tinh-chat-sua-ong-chua-60g-4010.html> (referer: None)
+2023-06-28 12:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-tam-st-ives-chiet-xuat-cam-chanh-lam-sang-da-650ml-96227.html> (referer: None)
+2023-06-28 12:27:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-tay-te-bao-chet-bio-essence-tinh-chat-sua-ong-chua-60g-4010.html>
+{'crawl_time': '2023-06-28 12:27:00',
+ 'name': 'Gel Tẩy Tế Bào Chết Bio-essence Dưỡng Da Tươi Trẻ 60g',
+ 'original_price': '310000 ',
+ 'price': '155000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-tam-st-ives-chiet-xuat-cam-chanh-lam-sang-da-650ml-96227.html>
+{'crawl_time': '2023-06-28 12:27:00',
+ 'name': 'Sữa Tắm St.Ives Tẩy Tế Bào Chết Hương Cam Chanh 650ml',
+ 'original_price': '180000 ',
+ 'price': '164000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-moi-cocoon-tu-ca-phe-dak-lak-5g-91595.html> (referer: None)
+2023-06-28 12:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-cocoon-tay-te-bao-chet-cho-mat-va-toan-than-tu-ca-phe-103451.html> (referer: None)
+2023-06-28 12:27:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-moi-cocoon-tu-ca-phe-dak-lak-5g-91595.html>
+{'crawl_time': '2023-06-28 12:27:00',
+ 'name': 'Tẩy Tế Bào Chết Môi Cocoon Từ Cà Phê Đắk Lắk 5g',
+ 'original_price': '75000 ',
+ 'price': '60000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:00 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-cocoon-tui-refill-tay-da-chet-toan-than-da-mat-101467.html> (referer: None)
+2023-06-28 12:27:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-cocoon-tay-te-bao-chet-cho-mat-va-toan-than-tu-ca-phe-103451.html>
+{'crawl_time': '2023-06-28 12:27:00',
+ 'name': 'Combo Tẩy Da Chết Cho Mặt & Tẩy Da Chết Toàn Thân',
+ 'original_price': '260000 ',
+ 'price': '208000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:00 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-cocoon-tui-refill-tay-da-chet-toan-than-da-mat-101467.html>
+{'crawl_time': '2023-06-28 12:27:00',
+ 'name': 'Combo Cocoon Big Size Tẩy Tế Bào Chết Toàn Thân Cà Phê Đắk Lắk 600ml '
+         '& Tẩy Tế Bào Chết Da Mặt 150ml',
+ 'original_price': '440000 ',
+ 'price': '325000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-da-chet-paula-s-choice-5-aha-cho-da-thuong-kho-50ml-2719.html> (referer: None)
+2023-06-28 12:27:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-da-chet-paula-s-choice-5-aha-cho-da-thuong-kho-50ml-2719.html>
+{'crawl_time': '2023-06-28 12:27:01',
+ 'name': 'Tẩy Da Chết Paula’s Choice 5% AHA Cho Da Thường Khô 50ml',
+ 'original_price': '949000 ',
+ 'price': '680000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-tay-te-bao-chet-caryophy-ngan-ngua-mun-250ml-99925.html> (referer: None)
+2023-06-28 12:27:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-tay-te-bao-chet-caryophy-ngan-ngua-mun-250ml-99925.html>
+{'crawl_time': '2023-06-28 12:27:01',
+ 'name': 'Gel Tẩy Tế Bào Chết Caryophy Ngăn Ngừa Mụn 250ml',
+ 'original_price': '450000 ',
+ 'price': '255000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-cocoon-gel-rua-mat-ca-phe-140ml-tay-te-bao-chet-da-mat-150ml-106849.html> (referer: None)
+2023-06-28 12:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bo-doi-ca-phe-dak-lak-lam-sach-da-chet-cho-mat-cocoon-92253.html> (referer: None)
+2023-06-28 12:27:01 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-cocoon-gel-rua-mat-ca-phe-140ml-tay-te-bao-chet-da-mat-150ml-106849.html>
+{'crawl_time': '2023-06-28 12:27:01',
+ 'name': 'Combo Cocoon Gel Rửa Mặt Cà Phê 140ml & Tẩy Tế Bào Chết Da Mặt 150ml',
+ 'original_price': '360000 ',
+ 'price': '319000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:01 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-cho-da-kho-120g-11035.html> (referer: None)
+2023-06-28 12:27:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bo-doi-ca-phe-dak-lak-lam-sach-da-chet-cho-mat-cocoon-92253.html>
+{'crawl_time': '2023-06-28 12:27:02',
+ 'name': 'Combo Tẩy Tế Bào Chết Da Mặt Cocoon Cà Phê Đắk Lắk 2x150ml',
+ 'original_price': '290000 ',
+ 'price': '232000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-cho-da-kho-120g-11035.html>
+{'crawl_time': '2023-06-28 12:27:02',
+ 'name': 'Tẩy Tế Bào Chết Rosette Cho Da Khô 120g',
+ 'original_price': '170000 ',
+ 'price': '84000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-da-kho-180g-84203.html> (referer: None)
+2023-06-28 12:27:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-rosette-cho-da-kho-180g-84203.html>
+{'crawl_time': '2023-06-28 12:27:02',
+ 'name': 'Tẩy Tế Bào Chết Rosette Cho Da Khô 180g',
+ 'original_price': '175000 ',
+ 'price': '123000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/muoi-tam-baresoul-tay-te-bao-chet-cho-co-the-toc-300g-91419.html> (referer: None)
+2023-06-28 12:27:02 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/muoi-tam-baresoul-tay-te-bao-chet-cho-co-the-toc-300g-91419.html>
+{'crawl_time': '2023-06-28 12:27:02',
+ 'name': 'Muối Tắm BareSoul Tẩy Tế Bào Chết Cho Da Đầu & Cơ Thể 330g',
+ 'original_price': '250000 ',
+ 'price': '195000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:02 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-tay-te-bao-chet-qua-mo-ngua-mun-st-ives-170g-1972.html> (referer: None)
+2023-06-28 12:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-tay-te-bao-chet-qua-mo-ngua-mun-st-ives-170g-1972.html>
+{'crawl_time': '2023-06-28 12:27:03',
+ 'name': 'Sữa Rửa Mặt St.Ives Tẩy Tế Bào Chết Trái Mơ Ngừa Mụn 170g',
+ 'original_price': '135000 ',
+ 'price': '111000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-moi-unpa-bubi-bubi-bubble-dang-sui-bot-10ml-102559.html> (referer: None)
+2023-06-28 12:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-moi-unpa-bubi-bubi-bubble-dang-sui-bot-10ml-102559.html>
+{'crawl_time': '2023-06-28 12:27:03',
+ 'name': 'Tẩy Tế Bào Chết Môi Unpa Bubi Bubi Bubble Dạng Sủi Bọt 10ml',
+ 'original_price': '217000 ',
+ 'price': '99000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-tay-te-bao-chet-purederm-da-mat-va-toan-than-50ml-2939.html> (referer: None)
+2023-06-28 12:27:03 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-da-chet-toan-than-exclusive-cosmetic-chanh-dao-380g-89919.html> (referer: None)
+2023-06-28 12:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-tay-te-bao-chet-purederm-da-mat-va-toan-than-50ml-2939.html>
+{'crawl_time': '2023-06-28 12:27:03',
+ 'name': 'Gel Tẩy Tế Bào Chết Purederm Tái Tạo Da 50ml',
+ 'original_price': '50000 ',
+ 'price': '36000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:03 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-da-chet-toan-than-exclusive-cosmetic-chanh-dao-380g-89919.html>
+{'crawl_time': '2023-06-28 12:27:03',
+ 'name': 'Tẩy Da Chết Toàn Thân Exclusive Cosmetic Chanh Đào 380g',
+ 'original_price': '149000 ',
+ 'price': '88000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-da-chet-cho-mat-organic-shop-chiet-xuat-ca-phe-75ml-91585.html> (referer: None)
+2023-06-28 12:27:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-da-chet-cho-mat-organic-shop-chiet-xuat-ca-phe-75ml-91585.html>
+{'crawl_time': '2023-06-28 12:27:04',
+ 'name': 'Tẩy Da Chết Cho Mặt Organic Shop Chiết Xuất Cà Phê 75ml',
+ 'original_price': '119000 ',
+ 'price': '59000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-tay-te-bao-chet-innisfree-tu-lua-mach-xanh-120ml-103291.html> (referer: None)
+2023-06-28 12:27:04 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-felina-dang-muoi-chiet-xuat-bo-500g-93433.html> (referer: None)
+2023-06-28 12:27:04 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-tay-te-bao-chet-innisfree-tu-lua-mach-xanh-120ml-103291.html>
+{'crawl_time': '2023-06-28 12:27:04',
+ 'name': 'Mặt Nạ Tẩy Tế Bào Chết innisfree Từ Lúa Mạch Xanh 120ml',
+ 'original_price': '260000 ',
+ 'price': '247000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-felina-dang-muoi-chiet-xuat-bo-500g-93433.html>
+{'crawl_time': '2023-06-28 12:27:05',
+ 'name': 'Muối Tắm Tẩy Tế Bào Chết Felina Chiết Xuất Bơ 500g',
+ 'original_price': '140000 ',
+ 'price': '87000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-tay-te-bao-chet-naruko-chiet-xuat-tram-tra-120g-68078.html> (referer: None)
+2023-06-28 12:27:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-tay-te-bao-chet-naruko-chiet-xuat-tram-tra-120g-68078.html>
+{'crawl_time': '2023-06-28 12:27:05',
+ 'name': 'Gel Tẩy Tế Bào Chết NARUKO Chiết Xuất Tràm Trà 120g',
+ 'original_price': '279000 ',
+ 'price': '209000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-tam-st-ives-chiet-xuat-muoi-bien-lam-sach-sau-650ml-96225.html> (referer: None)
+2023-06-28 12:27:05 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-tam-st-ives-chiet-xuat-muoi-bien-lam-sach-sau-650ml-96225.html>
+{'crawl_time': '2023-06-28 12:27:05',
+ 'name': 'Sữa Tắm St.Ives Tẩy Tế Bào Chết Hương Muối Biển 650ml',
+ 'original_price': '180000 ',
+ 'price': '164000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-te-bao-chet-bioderma-cho-da-dau-va-hon-hop-100ml-20004.html> (referer: None)
+2023-06-28 12:27:05 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-silkygirl-blush-hour-01-cam-dao-tre-trung-101821.html> (referer: None)
+2023-06-28 12:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-te-bao-chet-bioderma-cho-da-dau-va-hon-hop-100ml-20004.html>
+{'crawl_time': '2023-06-28 12:27:06',
+ 'name': 'Gel Tẩy Tế Bào Chết Bioderma Cho Da Dầu Và Hỗn Hợp 100ml',
+ 'original_price': '395000 ',
+ 'price': '345000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-silkygirl-blush-hour-01-cam-dao-tre-trung-101821.html>
+{'crawl_time': '2023-06-28 12:27:06',
+ 'name': 'Phấn Má Hồng Silkygirl 01 Cam Đào Trẻ Trung',
+ 'original_price': '168000 ',
+ 'price': '134000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/phan-ma-hong-maybelline-min-li-chuan-mau-30-fierce-4-5g-104639.html> (referer: None)
+2023-06-28 12:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/phan-ma-hong-maybelline-min-li-chuan-mau-30-fierce-4-5g-104639.html>
+{'crawl_time': '2023-06-28 12:27:06',
+ 'name': 'Phấn Má Hồng Maybelline Mịn Lì Chuẩn Màu 30 Fierce 4.5g',
+ 'original_price': '148000 ',
+ 'price': '112000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-3-in-1-lam-sach-sau-400ml-34119.html> (referer: None)
+2023-06-28 12:27:06 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-3-in-1-lam-sach-sau-400ml-34119.html>
+{'crawl_time': '2023-06-28 12:27:06',
+ 'name': "Nước Tẩy Trang L'Oreal Làm Sạch Sâu Trang Điểm 400ml",
+ 'original_price': '219000 ',
+ 'price': '159000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:06 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-bioderma-danh-cho-da-nhay-cam-500ml-9740.html> (referer: None)
+2023-06-28 12:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-bioderma-danh-cho-da-nhay-cam-500ml-9740.html>
+{'crawl_time': '2023-06-28 12:27:07',
+ 'name': 'Nước Tẩy Trang Bioderma Dành Cho Da Nhạy Cảm 500ml',
+ 'original_price': '525000 ',
+ 'price': '378000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml-19325.html> (referer: None)
+2023-06-28 12:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-400ml-19325.html>
+{'crawl_time': '2023-06-28 12:27:07',
+ 'name': "Nước Tẩy Trang L'Oreal Tươi Mát Cho Da Dầu, Hỗn Hợp 400ml",
+ 'original_price': '219000 ',
+ 'price': '159000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-la-roche-posay-danh-cho-da-nhay-cam-400ml-43795.html> (referer: None)
+2023-06-28 12:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-la-roche-posay-danh-cho-da-nhay-cam-400ml-43795.html>
+{'crawl_time': '2023-06-28 12:27:07',
+ 'name': 'Nước Tẩy Trang La Roche-Posay Dành Cho Da Nhạy Cảm 400ml',
+ 'original_price': '495000 ',
+ 'price': '378000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-bioderma-danh-cho-da-dau-hon-hop-500ml-11089.html> (referer: None)
+2023-06-28 12:27:07 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-bioderma-danh-cho-da-dau-hon-hop-500ml-11089.html>
+{'crawl_time': '2023-06-28 12:27:07',
+ 'name': 'Nước Tẩy Trang Bioderma Dành Cho Da Dầu & Hỗn Hợp 500ml',
+ 'original_price': '525000 ',
+ 'price': '393000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:07 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-paris-3-in-1-duong-am-danh-cho-da-thuong-da-kho-400ml-19286.html> (referer: None)
+2023-06-28 12:27:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-paris-3-in-1-duong-am-danh-cho-da-thuong-da-kho-400ml-19286.html>
+{'crawl_time': '2023-06-28 12:27:08',
+ 'name': "Nước Tẩy Trang L'Oreal Dưỡng Ẩm Cho Da Thường, Khô 400ml",
+ 'original_price': '219000 ',
+ 'price': '159000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-2-nuoc-tay-trang-bi-dao-cocoon-lam-sach-giam-dau-500ml-96589.html> (referer: None)
+2023-06-28 12:27:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/tay-da-chet-paula-s-choice-diu-nhe-cho-da-nhay-cam-30ml-92631.html> (referer: None)
+2023-06-28 12:27:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-2-nuoc-tay-trang-bi-dao-cocoon-lam-sach-giam-dau-500ml-96589.html>
+{'crawl_time': '2023-06-28 12:27:08',
+ 'name': 'Combo 2 Nước Tẩy Trang Bí Đao Cocoon Làm Sạch & Giảm Dầu 500ml',
+ 'original_price': '590000 ',
+ 'price': '465000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:08 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/tay-da-chet-paula-s-choice-diu-nhe-cho-da-nhay-cam-30ml-92631.html>
+{'crawl_time': '2023-06-28 12:27:08',
+ 'name': 'Tẩy Da Chết Paula’s Choice Dịu Nhẹ Cho Da Nhạy Cảm 30ml',
+ 'original_price': '339000 ',
+ 'price': '284000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:08 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bo-3-hop-bong-tay-trang-co-ban-silcot-82-mieng-hop-88133.html> (referer: None)
+2023-06-28 12:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bo-3-hop-bong-tay-trang-co-ban-silcot-82-mieng-hop-88133.html>
+{'crawl_time': '2023-06-28 12:27:09',
+ 'name': 'Combo 3 Bông Tẩy Trang Silcot Cơ Bản 82 Miếng/Hộp',
+ 'original_price': '117000 ',
+ 'price': '95000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-la-roche-posay-danh-cho-da-dau-da-nhay-cam-400ml-43789.html> (referer: None)
+2023-06-28 12:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-lam-sach-sau-lop-trang-diem-400ml-96677.html> (referer: None)
+2023-06-28 12:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-la-roche-posay-danh-cho-da-dau-da-nhay-cam-400ml-43789.html>
+{'crawl_time': '2023-06-28 12:27:09',
+ 'name': 'Nước Tẩy Trang La Roche-Posay Cho Da Dầu, Nhạy Cảm 400ml',
+ 'original_price': '495000 ',
+ 'price': '368000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-lam-sach-sau-lop-trang-diem-400ml-96677.html>
+{'crawl_time': '2023-06-28 12:27:09',
+ 'name': 'Nước Tẩy Trang Garnier Làm Sạch Sâu Lớp Trang Điểm 400ml',
+ 'original_price': '189000 ',
+ 'price': '155000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-danh-cho-da-dau-va-mun-400ml-moi-106533.html> (referer: None)
+2023-06-28 12:27:09 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-danh-cho-da-dau-va-mun-400ml-moi-106533.html>
+{'crawl_time': '2023-06-28 12:27:09',
+ 'name': 'Nước Tẩy Trang Garnier Dành Cho Da Dầu Và Mụn 400ml (Mới)',
+ 'original_price': '169000 ',
+ 'price': '139000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:09 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-4-bong-tay-trang-ipek-150-mieng-94831.html> (referer: None)
+2023-06-28 12:27:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-4-bong-tay-trang-ipek-150-mieng-94831.html>
+{'crawl_time': '2023-06-28 12:27:10',
+ 'name': 'Combo 4 Bông Tẩy Trang Ipek 150 Miếng',
+ 'original_price': '200000 ',
+ 'price': '111000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-simple-danh-cho-da-nhay-cam-200ml-61186.html> (referer: None)
+2023-06-28 12:27:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-simple-danh-cho-da-nhay-cam-200ml-61186.html>
+{'crawl_time': '2023-06-28 12:27:10',
+ 'name': 'Nước Tẩy Trang Simple Làm Sạch Trang Điểm Vượt Trội 200ml',
+ 'original_price': '210000 ',
+ 'price': '75000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-ipek-150-mieng-70199.html> (referer: None)
+2023-06-28 12:27:10 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-ipek-150-mieng-70199.html>
+{'crawl_time': '2023-06-28 12:27:10',
+ 'name': 'Bông Tẩy Trang Ipek 150 Miếng',
+ 'original_price': '43000 ',
+ 'price': '28000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-paris-lam-sach-va-cap-am-400ml-99707.html> (referer: None)
+2023-06-28 12:27:10 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-mihoo-kokimi-bong-vuong-tui-240-mieng-93859.html> (referer: None)
+2023-06-28 12:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-paris-lam-sach-va-cap-am-400ml-99707.html>
+{'crawl_time': '2023-06-28 12:27:11',
+ 'name': "Nước Tẩy Trang L'Oreal Làm Sạch Và Cấp Ẩm 400ml",
+ 'original_price': '269000 ',
+ 'price': '218000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-mihoo-kokimi-bong-vuong-tui-240-mieng-93859.html>
+{'crawl_time': '2023-06-28 12:27:11',
+ 'name': 'Bông Tẩy Trang Mihoo Kokimi Bông Vuông Túi 240 miếng',
+ 'original_price': '55000 ',
+ 'price': '47000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-danh-cho-da-nhay-cam-400ml-96659.html> (referer: None)
+2023-06-28 12:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-danh-cho-da-nhay-cam-400ml-96659.html>
+{'crawl_time': '2023-06-28 12:27:11',
+ 'name': 'Nước Tẩy Trang Garnier Dành Cho Da Nhạy Cảm 400ml',
+ 'original_price': '169000 ',
+ 'price': '129000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-simple-lam-sach-trang-diem-va-cap-am-400ml-104259.html> (referer: None)
+2023-06-28 12:27:11 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-paris-danh-cho-da-dau-400ml-95711.html> (referer: None)
+2023-06-28 12:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-simple-lam-sach-trang-diem-va-cap-am-400ml-104259.html>
+{'crawl_time': '2023-06-28 12:27:11',
+ 'name': 'Nước Tẩy Trang Simple Làm Sạch Trang Điểm Vượt Trội 400ml',
+ 'original_price': '189000 ',
+ 'price': '131000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:11 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-l-oreal-paris-danh-cho-da-dau-400ml-95711.html>
+{'crawl_time': '2023-06-28 12:27:11',
+ 'name': "Nước Tẩy Trang L'Oréal Làm Sạch Sâu Cho Da Dầu 400ml",
+ 'original_price': '269000 ',
+ 'price': '214000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-senka-tuoi-mat-da-230ml-69764.html> (referer: None)
+2023-06-28 12:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-senka-tuoi-mat-da-230ml-69764.html>
+{'crawl_time': '2023-06-28 12:27:12',
+ 'name': 'Nước Tẩy Trang Senka Ngừa Mụn, Kiểm Soát Nhờn 230ml',
+ 'original_price': '119000 ',
+ 'price': '79000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-2-bong-tay-trang-ipek-150-mieng-95027.html> (referer: None)
+2023-06-28 12:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-2-bong-tay-trang-ipek-150-mieng-95027.html>
+{'crawl_time': '2023-06-28 12:27:12',
+ 'name': 'Combo 2 Bông Tẩy Trang Ipek 150 Miếng',
+ 'original_price': '100000 ',
+ 'price': '56000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-jomi-120-mieng-8617.html> (referer: None)
+2023-06-28 12:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-cocoon-chiet-xuat-bi-dao-lam-sach-da-500ml-91747.html> (referer: None)
+2023-06-28 12:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-jomi-120-mieng-8617.html>
+{'crawl_time': '2023-06-28 12:27:12',
+ 'name': 'Bông Tẩy Trang Jomi 120 Miếng',
+ 'original_price': '37000 ',
+ 'price': '28000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:12 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-cocoon-chiet-xuat-bi-dao-lam-sach-da-500ml-91747.html>
+{'crawl_time': '2023-06-28 12:27:12',
+ 'name': 'Nước Tẩy Trang Bí Đao Cocoon Làm Sạch & Giảm Dầu 500ml',
+ 'original_price': '295000 ',
+ 'price': '265000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:12 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-4-bong-tay-trang-ceiba-100-cotton-140-mieng-98789.html> (referer: None)
+2023-06-28 12:27:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-silcot-co-ban-82-mieng-3242.html> (referer: None)
+2023-06-28 12:27:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-4-bong-tay-trang-ceiba-100-cotton-140-mieng-98789.html>
+{'crawl_time': '2023-06-28 12:27:13',
+ 'name': 'Combo 4 Bông Tẩy Trang Ceiba 100% Chất Liệu Cotton 140 Miếng',
+ 'original_price': '170000 ',
+ 'price': '111000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-silcot-co-ban-82-mieng-3242.html>
+{'crawl_time': '2023-06-28 12:27:13',
+ 'name': 'Bông Tẩy Trang Silcot Cơ Bản Hộp 82 Miếng',
+ 'original_price': '35000 ',
+ 'price': '32000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bo-3-hop-bong-tay-trang-cao-cap-silcot-premium-66-mieng-hop-88131.html> (referer: None)
+2023-06-28 12:27:13 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-lilybell-lilian-puff-cotton-222-mieng-91945.html> (referer: None)
+2023-06-28 12:27:13 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bo-3-hop-bong-tay-trang-cao-cap-silcot-premium-66-mieng-hop-88131.html>
+{'crawl_time': '2023-06-28 12:27:13',
+ 'name': 'Combo 3 Bông Tẩy Trang Silcot Cao Cấp 66 Miếng/Hộp',
+ 'original_price': '132000 ',
+ 'price': '102000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-lilybell-lilian-puff-cotton-222-mieng-91945.html>
+{'crawl_time': '2023-06-28 12:27:14',
+ 'name': 'Bông Tẩy Trang LilyBell Lilian Puff Cotton 222 Miếng',
+ 'original_price': '80000 ',
+ 'price': '55000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-senka-duong-sang-da-230ml-76260.html> (referer: None)
+2023-06-28 12:27:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-mihoo-tui-200-mieng-84753.html> (referer: None)
+2023-06-28 12:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-senka-duong-sang-da-230ml-76260.html>
+{'crawl_time': '2023-06-28 12:27:14',
+ 'name': 'Nước Tẩy Trang Senka Cấp Ẩm, Dưỡng Sáng Da 230ml',
+ 'original_price': '119000 ',
+ 'price': '75000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-vitamin-c-lam-sang-da-400ml-96673.html> (referer: None)
+2023-06-28 12:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-mihoo-tui-200-mieng-84753.html>
+{'crawl_time': '2023-06-28 12:27:14',
+ 'name': 'Bông Tẩy Trang Mihoo Bông Tròn Túi 200 Miếng',
+ 'original_price': '58000 ',
+ 'price': '54000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-garnier-vitamin-c-lam-sang-da-400ml-96673.html>
+{'crawl_time': '2023-06-28 12:27:14',
+ 'name': 'Nước Tẩy Trang Garnier Vitamin C Làm Sáng Da 400ml',
+ 'original_price': '189000 ',
+ 'price': '139000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:14 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-mat-moi-maybelline-150ml-1641.html> (referer: None)
+2023-06-28 12:27:14 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-mat-moi-maybelline-150ml-1641.html>
+{'crawl_time': '2023-06-28 12:27:14',
+ 'name': 'Nước Tẩy Trang Mắt Môi Maybelline 150ml',
+ 'original_price': '149000 ',
+ 'price': '139000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-moi-khong-mau-dhc-ho-tro-giam-tham-moi-1-5g-6710.html> (referer: None)
+2023-06-28 12:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-moi-khong-mau-dhc-ho-tro-giam-tham-moi-1-5g-6710.html>
+{'crawl_time': '2023-06-28 12:27:15',
+ 'name': 'Son Dưỡng Môi DHC Không Màu Hỗ Trợ Giảm Thâm Môi 1.5g',
+ 'original_price': '199000 ',
+ 'price': '165000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-mediheal-ho-tro-giam-tham-lam-hong-moi-ban-ngay-10ml-12588.html> (referer: None)
+2023-06-28 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-bong-maybelline-130-extra-do-nau-dat-4-2ml-106411.html> (referer: None)
+2023-06-28 12:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-mediheal-ho-tro-giam-tham-lam-hong-moi-ban-ngay-10ml-12588.html>
+{'crawl_time': '2023-06-28 12:27:15',
+ 'name': 'Son Dưỡng Môi Mediheal Ban Ngày Màu Hồng 10ml',
+ 'original_price': '143000 ',
+ 'price': '59000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-black-rouge-a12-dashed-brown-nau-gach-4-5g-103777.html> (referer: None)
+2023-06-28 12:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-bong-maybelline-130-extra-do-nau-dat-4-2ml-106411.html>
+{'crawl_time': '2023-06-28 12:27:15',
+ 'name': 'Son Bóng Maybelline 130 Extra - Đỏ Nâu Đất 4.2ml',
+ 'original_price': '298000 ',
+ 'price': '217000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:15 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-black-rouge-a12-dashed-brown-nau-gach-4-5g-103777.html>
+{'crawl_time': '2023-06-28 12:27:15',
+ 'name': 'Son Kem Lì Black Rouge A12 Dashed Brown Nâu Gạch 4.5g',
+ 'original_price': '298000 ',
+ 'price': '164000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:15 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-mediheal-lam-mem-vet-tham-mem-moi-10ml-9920.html> (referer: None)
+2023-06-28 12:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-mediheal-lam-mem-vet-tham-mem-moi-10ml-9920.html>
+{'crawl_time': '2023-06-28 12:27:16',
+ 'name': 'Son Dưỡng Môi Mediheal Ban Đêm Không Màu 10ml',
+ 'original_price': '143000 ',
+ 'price': '58000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-mediheal-am-muot-min-mang-lam-hong-moi-10ml-99883.html> (referer: None)
+2023-06-28 12:27:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-3ce-blur-water-tint-sepia-mau-do-gach-4-6g-99019.html> (referer: None)
+2023-06-28 12:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-mediheal-am-muot-min-mang-lam-hong-moi-10ml-99883.html>
+{'crawl_time': '2023-06-28 12:27:16',
+ 'name': 'Son Dưỡng Môi Mediheal Ban Ngày Màu Cam 10ml',
+ 'original_price': '143000 ',
+ 'price': '60000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-3ce-blur-water-tint-sepia-mau-do-gach-4-6g-99019.html>
+{'crawl_time': '2023-06-28 12:27:16',
+ 'name': 'Son Kem Lì 3CE Sepia - Đỏ Gạch Đậm 4.6g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:16 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-bong-maybelline-61-risky-gach-dun-4-2ml-106415.html> (referer: None)
+2023-06-28 12:27:16 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-bong-maybelline-61-risky-gach-dun-4-2ml-106415.html>
+{'crawl_time': '2023-06-28 12:27:16',
+ 'name': 'Son Bóng Maybelline 61 Risky - Gạch Đun 4.2ml',
+ 'original_price': '298000 ',
+ 'price': '227000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-moi-hong-xinh-vaseline-4-8g-74996.html> (referer: None)
+2023-06-28 12:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-moi-hong-xinh-vaseline-4-8g-74996.html>
+{'crawl_time': '2023-06-28 12:27:17',
+ 'name': 'Son Dưỡng Môi Vaseline Hồng Xinh 4.8g',
+ 'original_price': '70000 ',
+ 'price': '55000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-3ce-mau-do-cam-child-like-4g-35130.html> (referer: None)
+2023-06-28 12:27:17 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-3ce-mau-do-cam-child-like-4g-35130.html>
+{'crawl_time': '2023-06-28 12:27:17',
+ 'name': 'Son Kem Lì 3CE Mịn Màng Như Nhung Child Like - Đỏ Cam 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-sieu-li-3ce-live-a-little-mau-do-dat-4g-99035.html> (referer: None)
+2023-06-28 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-bong-maybelline-125-keen-hong-dao-dat-4-2ml-106417.html> (referer: None)
+2023-06-28 12:27:17 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-bioderma-dang-sap-lam-diu-moi-kho-nut-ne-4g-99877.html> (referer: None)
+2023-06-28 12:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-sieu-li-3ce-live-a-little-mau-do-dat-4g-99035.html>
+{'crawl_time': '2023-06-28 12:27:18',
+ 'name': 'Son Kem Lì 3CE Mịn Nhẹ Live A Little - Đỏ Đất 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-bong-maybelline-125-keen-hong-dao-dat-4-2ml-106417.html>
+{'crawl_time': '2023-06-28 12:27:18',
+ 'name': 'Son Bóng Maybelline 125 Keen - Hồng Đào Đất 4.2ml',
+ 'original_price': '298000 ',
+ 'price': '217000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-thoi-li-3ce-vo-trong-suot-speak-to-me-hong-dam-3-5g-99065.html> (referer: None)
+2023-06-28 12:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-bioderma-dang-sap-lam-diu-moi-kho-nut-ne-4g-99877.html>
+{'crawl_time': '2023-06-28 12:27:18',
+ 'name': 'Son Dưỡng Bioderma Dạng Sáp Làm Dịu Môi Khô, Nứt Nẻ 4g',
+ 'original_price': '135000 ',
+ 'price': '120000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-dau-dua-ben-tre-cocoon-5g-86707.html> (referer: None)
+2023-06-28 12:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-thoi-li-3ce-vo-trong-suot-speak-to-me-hong-dam-3-5g-99065.html>
+{'crawl_time': '2023-06-28 12:27:18',
+ 'name': 'Son Thỏi Lì 3CE Vỏ Trong Suốt Speak To Me - Đỏ Mận 3.5g',
+ 'original_price': '380000 ',
+ 'price': '304000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-dau-dua-ben-tre-cocoon-5g-86707.html>
+{'crawl_time': '2023-06-28 12:27:18',
+ 'name': 'Son Dưỡng Cocoon Dầu Dừa Bến Tre 5g',
+ 'original_price': '32000 ',
+ 'price': '28000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:18 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-3ce-blur-water-tint-mau-laydown-4-6g-99085.html> (referer: None)
+2023-06-28 12:27:18 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-3ce-blur-water-tint-mau-laydown-4-6g-99085.html>
+{'crawl_time': '2023-06-28 12:27:18',
+ 'name': 'Son Kem Lì 3CE Laydown - Hồng Đào Trầm Pha Nâu 4.6g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-bong-maybelline-62-irresistible-da-dat-4-2ml-106421.html> (referer: None)
+2023-06-28 12:27:19 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-bong-maybelline-62-irresistible-da-dat-4-2ml-106421.html>
+{'crawl_time': '2023-06-28 12:27:19',
+ 'name': 'Son Bóng Maybelline 62 Irresistible – Da Đất 4.2ml',
+ 'original_price': '298000 ',
+ 'price': '227000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ban-chai-dien-p-s-s100-pro-cong-nghe-song-am-mau-xanh-ombre-98135.html> (referer: None)
+2023-06-28 12:27:19 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-3ce-casual-affair-mau-hoa-hong-kho-4-6g-99005.html> (referer: None)
+2023-06-28 12:27:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ban-chai-dien-p-s-s100-pro-cong-nghe-song-am-mau-xanh-ombre-98135.html>
+{'crawl_time': '2023-06-28 12:27:20',
+ 'name': 'Bàn Chải Điện P/S S100 Pro Công Nghệ Sóng Âm Màu Xanh Ombre',
+ 'original_price': '1300000 ',
+ 'price': '804000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-3ce-casual-affair-mau-hoa-hong-kho-4-6g-99005.html>
+{'crawl_time': '2023-06-28 12:27:20',
+ 'name': 'Son Kem Lì 3CE Casual Affair - Hoa Hồng Khô 4.6g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:20 [scrapy.extensions.logstats] INFO: Crawled 211 pages (at 211 pages/min), scraped 210 items (at 210 items/min)
+2023-06-28 12:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-duong-moi-mem-min-vaseline-4-8g-74990.html> (referer: None)
+2023-06-28 12:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-3ce-mau-do-dat-daffodil-4g-35262.html> (referer: None)
+2023-06-28 12:27:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-duong-moi-mem-min-vaseline-4-8g-74990.html>
+{'crawl_time': '2023-06-28 12:27:20',
+ 'name': 'Son Dưỡng Môi Mềm Mịn Vaseline 4.8g',
+ 'original_price': '70000 ',
+ 'price': '64000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-thoi-li-3ce-vo-trong-suot-focus-on-me-do-san-ho-3-5g-99067.html> (referer: None)
+2023-06-28 12:27:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-3ce-mau-do-dat-daffodil-4g-35262.html>
+{'crawl_time': '2023-06-28 12:27:20',
+ 'name': 'Son Kem Lì 3CE Mịn Như Nhung Daffodil - Đỏ Đất 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-gilaa-the-he-moi-01-glad-day-mau-do-nau-5g-92033.html> (referer: None)
+2023-06-28 12:27:20 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-thoi-li-3ce-soft-matte-mau-red-muse-3-5g-99073.html> (referer: None)
+2023-06-28 12:27:20 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-thoi-li-3ce-vo-trong-suot-focus-on-me-do-san-ho-3-5g-99067.html>
+{'crawl_time': '2023-06-28 12:27:20',
+ 'name': 'Son Thỏi Lì 3CE Vỏ Trong Suốt Focus On Me - Đỏ San Hô 3.5g',
+ 'original_price': '380000 ',
+ 'price': '304000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-gilaa-the-he-moi-01-glad-day-mau-do-nau-5g-92033.html>
+{'crawl_time': '2023-06-28 12:27:21',
+ 'name': 'Son Kem Lì Gilaa Thế Hệ Mới 01 Glad Day - Đỏ Nâu 5g',
+ 'original_price': '250000 ',
+ 'price': '179000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-thoi-li-3ce-soft-matte-mau-red-muse-3-5g-99073.html>
+{'crawl_time': '2023-06-28 12:27:21',
+ 'name': 'Son Thỏi Lì 3CE Vỏ Trong Suốt Red Muse - Đỏ Tươi 3.5g',
+ 'original_price': '380000 ',
+ 'price': '304000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-black-rouge-a06-brick-red-mau-do-dat-4-5g-103779.html> (referer: None)
+2023-06-28 12:27:21 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-black-rouge-a06-brick-red-mau-do-dat-4-5g-103779.html>
+{'crawl_time': '2023-06-28 12:27:21',
+ 'name': 'Son Kem Lì Black Rouge A06 Brick Red - Đỏ Đất 4.5g',
+ 'original_price': '298000 ',
+ 'price': '164000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-3ce-play-off-mau-do-co-dien-4-6g-99013.html> (referer: None)
+2023-06-28 12:27:21 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/ban-chai-dien-p-s-s100-pro-cong-nghe-song-am-mau-trang-98137.html> (referer: None)
+2023-06-28 12:27:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-3ce-play-off-mau-do-co-dien-4-6g-99013.html>
+{'crawl_time': '2023-06-28 12:27:22',
+ 'name': 'Son Kem Lì 3CE Play Off - Đỏ Cổ Điển 4.6g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-thoi-3ce-vo-trong-suot-unstained-red-do-phan-3-5g-103665.html> (referer: None)
+2023-06-28 12:27:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/ban-chai-dien-p-s-s100-pro-cong-nghe-song-am-mau-trang-98137.html>
+{'crawl_time': '2023-06-28 12:27:22',
+ 'name': 'Bàn Chải Điện P/S S100 Pro Công Nghệ Sóng Âm Màu Trắng',
+ 'original_price': '1300000 ',
+ 'price': '804000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-thoi-3ce-vo-trong-suot-unstained-red-do-phan-3-5g-103665.html>
+{'crawl_time': '2023-06-28 12:27:22',
+ 'name': 'Son Thỏi 3CE Vỏ Trong Suốt Unstained Red - Đỏ Phấn 3.5g',
+ 'original_price': '380000 ',
+ 'price': '304000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:22 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-sieu-li-3ce-peach-tease-mau-cam-san-ho-4g-99027.html> (referer: None)
+2023-06-28 12:27:22 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-sieu-li-3ce-peach-tease-mau-cam-san-ho-4g-99027.html>
+{'crawl_time': '2023-06-28 12:27:22',
+ 'name': 'Son Kem Lì 3CE Mịn Nhẹ Peach Tease - Cam San Hô 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-li-lau-phai-3ce-mau-222-step-and-go-19301.html> (referer: None)
+2023-06-28 12:27:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-li-lau-phai-3ce-mau-222-step-and-go-19301.html>
+{'crawl_time': '2023-06-28 12:27:23',
+ 'name': 'Son Thỏi 3CE Mịn Lì 222 Step And Go - Đỏ Đất 3.5g',
+ 'original_price': '380000 ',
+ 'price': '304000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:23 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-sieu-li-3ce-needful-mau-do-gach-4g-99029.html> (referer: None)
+2023-06-28 12:27:23 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-sieu-li-3ce-needful-mau-do-gach-4g-99029.html>
+{'crawl_time': '2023-06-28 12:27:23',
+ 'name': 'Son Kem Lì 3CE Mịn Nhẹ Needful - Đỏ Gạch 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-gilaa-rich-rosie-09-hei-hei-mau-do-hong-dao-5g-97919.html> (referer: None)
+2023-06-28 12:27:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-gilaa-rich-rosie-09-hei-hei-mau-do-hong-dao-5g-97919.html>
+{'crawl_time': '2023-06-28 12:27:24',
+ 'name': 'Son Kem Lì Gilaa 09 Hei Hei - Đỏ Hồng Đào 5g',
+ 'original_price': '298000 ',
+ 'price': '198000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-3ce-mau-do-nau-taupe-4g-35226.html> (referer: None)
+2023-06-28 12:27:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-3ce-mau-do-nau-taupe-4g-35226.html>
+{'crawl_time': '2023-06-28 12:27:24',
+ 'name': 'Son Kem Lì 3CE Mịn Màng Như Nhung Taupe - Đỏ Gạch 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-li-maybelline-min-moi-sieu-nhe-899-do-gach-1-7g-96319.html> (referer: None)
+2023-06-28 12:27:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-thoi-li-3ce-227-benchmark-mau-cam-do-chay-3-5g-98933.html> (referer: None)
+2023-06-28 12:27:24 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-li-maybelline-min-moi-sieu-nhe-899-do-gach-1-7g-96319.html>
+{'crawl_time': '2023-06-28 12:27:24',
+ 'name': 'Son Lì Maybelline Mịn Môi Siêu Nhẹ 899 Đỏ Gạch 1.7g',
+ 'original_price': '228000 ',
+ 'price': '168000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-gilaa-the-he-moi-04-first-day-mau-do-gach-tram-5g-92039.html> (referer: None)
+2023-06-28 12:27:24 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-gilaa-rich-rosie-08-take-a-sip-do-ruou-vang-5g-97921.html> (referer: None)
+2023-06-28 12:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-thoi-li-3ce-227-benchmark-mau-cam-do-chay-3-5g-98933.html>
+{'crawl_time': '2023-06-28 12:27:25',
+ 'name': 'Son Thỏi Lì 3CE 227 Benchmark - Cam Đỏ Cháy 3.5g',
+ 'original_price': '380000 ',
+ 'price': '303000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-bong-maybelline-120-punchy-cam-dat-4-2ml-106423.html> (referer: None)
+2023-06-28 12:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-gilaa-the-he-moi-04-first-day-mau-do-gach-tram-5g-92039.html>
+{'crawl_time': '2023-06-28 12:27:25',
+ 'name': 'Son Kem Lì Gilaa Thế Hệ Mới 04 First Day - Đỏ Gạch Trầm 5g',
+ 'original_price': '250000 ',
+ 'price': '170000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-gilaa-rich-rosie-08-take-a-sip-do-ruou-vang-5g-97921.html>
+{'crawl_time': '2023-06-28 12:27:25',
+ 'name': 'Son Kem Lì Gilaa 08 Take A Sip - Đỏ Rượu Vang 5g',
+ 'original_price': '298000 ',
+ 'price': '198000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-bong-maybelline-120-punchy-cam-dat-4-2ml-106423.html>
+{'crawl_time': '2023-06-28 12:27:25',
+ 'name': 'Son Bóng Maybelline 120 Punchy – Cam Đất 4.2ml',
+ 'original_price': '298000 ',
+ 'price': '217000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:25 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-thoi-li-3ce-soft-matte-mau-giving-pleasure-3-5g-99081.html> (referer: None)
+2023-06-28 12:27:25 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-thoi-li-3ce-soft-matte-mau-giving-pleasure-3-5g-99081.html>
+{'crawl_time': '2023-06-28 12:27:25',
+ 'name': 'Son Thỏi Lì 3CE Vỏ Trong Suốt Giving Pleasure - Cam Đỏ 3.5g',
+ 'original_price': '380000 ',
+ 'price': '304000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/dung-dich-ve-sinh-phu-nu-femfresh-daily-intimate-250ml-97759.html> (referer: None)
+2023-06-28 12:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/dung-dich-ve-sinh-phu-nu-femfresh-daily-intimate-250ml-97759.html>
+{'crawl_time': '2023-06-28 12:27:26',
+ 'name': 'Dung Dịch Vệ Sinh Phụ Nữ Femfresh Cao Cấp Hằng Ngày 250ml',
+ 'original_price': '168000 ',
+ 'price': '168000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/son-kem-li-3ce-mau-cam-dat-going-right-4g-35259.html> (referer: None)
+2023-06-28 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-cosrx-tram-tra-0-5-bha-co-do-ph-thap-150ml-96523.html> (referer: None)
+2023-06-28 12:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/son-kem-li-3ce-mau-cam-dat-going-right-4g-35259.html>
+{'crawl_time': '2023-06-28 12:27:26',
+ 'name': 'Son Kem Lì 3CE Mịn Như Nhung Going Right - Cam Hồng Đất 4g',
+ 'original_price': '340000 ',
+ 'price': '272000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:26 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-cosrx-tram-tra-0-5-bha-co-do-ph-thap-150ml-96523.html>
+{'crawl_time': '2023-06-28 12:27:26',
+ 'name': 'Gel Rửa Mặt Cosrx Tràm Trà, 0.5% BHA Có Độ pH Thấp 150ml',
+ 'original_price': '339000 ',
+ 'price': '120000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:26 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-500ml-moi-103543.html> (referer: None)
+2023-06-28 12:27:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-500ml-moi-103543.html>
+{'crawl_time': '2023-06-28 12:27:27',
+ 'name': 'Sữa Rửa Mặt Cetaphil Dịu Lành Cho Da Nhạy Cảm 500ml (Mới)',
+ 'original_price': '419000 ',
+ 'price': '339000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-125ml-moi-101589.html> (referer: None)
+2023-06-28 12:27:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-90639.html> (referer: None)
+2023-06-28 12:27:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-125ml-moi-101589.html>
+{'crawl_time': '2023-06-28 12:27:27',
+ 'name': 'Sữa Rửa Mặt Cetaphil Dịu Lành Cho Da Nhạy Cảm 125ml (Mới)',
+ 'original_price': '165000 ',
+ 'price': '132000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-danh-cho-da-nhay-cam-simple-150ml-71263.html> (referer: None)
+2023-06-28 12:27:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-400ml-90639.html>
+{'crawl_time': '2023-06-28 12:27:27',
+ 'name': 'Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 400ml',
+ 'original_price': '540000 ',
+ 'price': '432000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:27 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-danh-cho-da-nhay-cam-simple-150ml-71263.html>
+{'crawl_time': '2023-06-28 12:27:27',
+ 'name': 'Sữa Rửa Mặt Simple Giúp Da Sạch Thoáng 150ml',
+ 'original_price': '132000 ',
+ 'price': '92000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:27 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-la-roche-posay-cho-da-dau-nhay-cam-400ml-68810.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-la-roche-posay-cho-da-dau-nhay-cam-400ml-68810.html>
+{'crawl_time': '2023-06-28 12:27:28',
+ 'name': 'Gel Rửa Mặt La Roche-Posay Dành Cho Da Dầu, Nhạy Cảm 400ml',
+ 'original_price': '595000 ',
+ 'price': '449000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cerave-sach-sau-cho-da-thuong-den-da-dau-236ml-102957.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cerave-sach-sau-cho-da-thuong-den-da-dau-236ml-102957.html>
+{'crawl_time': '2023-06-28 12:27:28',
+ 'name': 'Sữa Rửa Mặt CeraVe Sạch Sâu Cho Da Thường Đến Da Dầu 236ml',
+ 'original_price': '285000 ',
+ 'price': '254000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-simple-kiem-dau-ngua-mun-cho-da-mun-150ml-98921.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cerave-cho-da-thuong-den-kho-473ml-102963.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-simple-kiem-dau-ngua-mun-cho-da-mun-150ml-98921.html>
+{'crawl_time': '2023-06-28 12:27:28',
+ 'name': 'Gel Rửa Mặt Simple Thanh Khiết, Giảm Bóng Nhờn 150ml',
+ 'original_price': '132000 ',
+ 'price': '92000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-tao-bot-la-roche-posay-danh-cho-da-dau-nhay-cam-200ml-7947.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-rua-mat-hada-labo-duong-am-toi-uu-80g-4359.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cerave-cho-da-thuong-den-kho-473ml-102963.html>
+{'crawl_time': '2023-06-28 12:27:28',
+ 'name': 'Sữa Rửa Mặt CeraVe Cho Da Thường Đến Khô 473ml',
+ 'original_price': '380000 ',
+ 'price': '338000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:28 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-bnbg-tron-bo-10-mat-na-duong-da-cao-cap-91147.html> (referer: None)
+2023-06-28 12:27:28 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-tao-bot-la-roche-posay-danh-cho-da-dau-nhay-cam-200ml-7947.html>
+{'crawl_time': '2023-06-28 12:27:28',
+ 'name': 'Gel Rửa Mặt La Roche-Posay Dành Cho Da Dầu, Nhạy Cảm 200ml',
+ 'original_price': '395000 ',
+ 'price': '275000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-rua-mat-hada-labo-duong-am-toi-uu-80g-4359.html>
+{'crawl_time': '2023-06-28 12:27:29',
+ 'name': 'Kem Rửa Mặt Hada Labo Sạch Sâu Dưỡng Ẩm 80g',
+ 'original_price': '79000 ',
+ 'price': '67000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-bnbg-tron-bo-10-mat-na-duong-da-cao-cap-91147.html>
+{'crawl_time': '2023-06-28 12:27:29',
+ 'name': 'Combo BNBG Trọn Bộ 10 Mặt Nạ Dưỡng Da Cao Cấp',
+ 'original_price': '490000 ',
+ 'price': '169000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:29 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-naruko-dang-bun-tram-tra-120g-55771.html> (referer: None)
+2023-06-28 12:27:29 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-naruko-dang-bun-tram-tra-120g-55771.html>
+{'crawl_time': '2023-06-28 12:27:29',
+ 'name': 'Sữa Rửa Mặt Naruko Dạng Bùn Tràm Trà 120ml',
+ 'original_price': '239000 ',
+ 'price': '175000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/serum-l-oreal-giam-bong-mat-lam-day-ranh-nhan-20ml-106595.html> (referer: None)
+2023-06-28 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-02-gel-rua-mat-tao-bot-la-roche-posay-danh-cho-da-dau-nhay-cam-50ml-86311.html> (referer: None)
+2023-06-28 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/hop-8-mieng-mat-na-naruko-tram-tra-kiem-soat-dau-va-giam-mun-26ml-mieng-73471.html> (referer: None)
+2023-06-28 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/serum-l-oreal-giam-bong-mat-lam-day-ranh-nhan-20ml-106595.html>
+{'crawl_time': '2023-06-28 12:27:30',
+ 'name': "Serum L'Oreal Giảm Bọng Mắt & Làm Đầy Rãnh Nhăn 20ml",
+ 'original_price': '479000 ',
+ 'price': '346000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-02-gel-rua-mat-tao-bot-la-roche-posay-danh-cho-da-dau-nhay-cam-50ml-86311.html>
+{'crawl_time': '2023-06-28 12:27:30',
+ 'name': 'Combo 2 Gel Rửa Mặt La Roche-Posay Cho Da Dầu Nhạy Cảm 50ml',
+ 'original_price': '350000 ',
+ 'price': '119000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/hop-8-mieng-mat-na-naruko-tram-tra-kiem-soat-dau-va-giam-mun-26ml-mieng-73471.html>
+{'crawl_time': '2023-06-28 12:27:30',
+ 'name': 'Hộp 8 Miếng Mặt Nạ Naruko Tràm Trà Kiềm Dầu Giảm Mụn 26ml/M',
+ 'original_price': '299000 ',
+ 'price': '189000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-1000ml-moi-102853.html> (referer: None)
+2023-06-28 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-bnbg-vitamin-e-cap-nuoc-duong-am-da-30ml-3948.html> (referer: None)
+2023-06-28 12:27:30 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-bnbg-vitamin-b-ho-tro-phuc-hoi-da-hu-ton-30ml-3950.html> (referer: None)
+2023-06-28 12:27:30 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-1000ml-moi-102853.html>
+{'crawl_time': '2023-06-28 12:27:30',
+ 'name': 'Sữa Rửa Mặt Cetaphil Dịu Lành Cho Da Nhạy Cảm 1000ml (Mới)',
+ 'original_price': '652000 ',
+ 'price': '549000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-bnbg-vitamin-e-cap-nuoc-duong-am-da-30ml-3948.html>
+{'crawl_time': '2023-06-28 12:27:31',
+ 'name': 'Mặt Nạ BNBG Vitamin E Cấp Nước, Dưỡng Ẩm Da 30ml',
+ 'original_price': '49000 ',
+ 'price': '17000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-bnbg-vitamin-b-ho-tro-phuc-hoi-da-hu-ton-30ml-3950.html>
+{'crawl_time': '2023-06-28 12:27:31',
+ 'name': 'Mặt Nạ BNBG Vitamin B Hỗ Trợ Phục Hồi Da Hư Tổn 30ml',
+ 'original_price': '49000 ',
+ 'price': '17000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-200ml-54724.html> (referer: None)
+2023-06-28 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-toc-cao-cap-tsubaki-phuc-hoi-hu-ton-180g-78298.html> (referer: None)
+2023-06-28 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-svr-khong-chua-xa-phong-cho-da-dau-200ml-54724.html>
+{'crawl_time': '2023-06-28 12:27:31',
+ 'name': 'Gel Rửa Mặt SVR Không Chứa Xà Phòng Cho Da Dầu 200ml',
+ 'original_price': '380000 ',
+ 'price': '302000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-toc-cao-cap-tsubaki-phuc-hoi-hu-ton-180g-78298.html>
+{'crawl_time': '2023-06-28 12:27:31',
+ 'name': 'Mặt Nạ Tóc Tsubaki Cao Cấp Phục Hồi Hư Tổn 180g',
+ 'original_price': '269000 ',
+ 'price': '188000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-fixderma-duong-am-cho-da-mat-co-the-75g-100063.html> (referer: None)
+2023-06-28 12:27:31 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-fixderma-duong-am-cho-da-mat-co-the-75g-100063.html>
+{'crawl_time': '2023-06-28 12:27:31',
+ 'name': 'Kem Chống Nắng Fixderma Dưỡng Ẩm Cho Da Mặt & Cơ Thể 75g',
+ 'original_price': '350000 ',
+ 'price': '235000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:31 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-duong-the-mat-lanh-sunplay-spf-50-pa-150g-86811.html> (referer: None)
+2023-06-28 12:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-duong-the-mat-lanh-sunplay-spf-50-pa-150g-86811.html>
+{'crawl_time': '2023-06-28 12:27:32',
+ 'name': 'Lotion Chống Nắng Sunplay Dưỡng Thể Mát Lạnh 150g',
+ 'original_price': '204000 ',
+ 'price': '173000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-eucerin-ph5-cho-da-nhay-cam-400ml-92917.html> (referer: None)
+2023-06-28 12:27:32 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-eucerin-ph5-cho-da-nhay-cam-400ml-92917.html>
+{'crawl_time': '2023-06-28 12:27:32',
+ 'name': 'Sữa Rửa Mặt Eucerin Dịu Nhẹ Cho Da Nhạy Cảm 400ml',
+ 'original_price': '279000 ',
+ 'price': '210000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/but-ke-mat-nuoc-maybelline-sac-manh-bk1-ultra-black-0-4g-100905.html> (referer: None)
+2023-06-28 12:27:32 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cerave-cho-da-thuong-den-kho-236ml-102967.html> (referer: None)
+2023-06-28 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/but-ke-mat-nuoc-maybelline-sac-manh-bk1-ultra-black-0-4g-100905.html>
+{'crawl_time': '2023-06-28 12:27:33',
+ 'name': 'Bút Kẻ Mắt Nước Maybelline Sắc Mảnh BK1 Đen Sắc Sảo 0.4g',
+ 'original_price': '218000 ',
+ 'price': '158000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cerave-cho-da-thuong-den-kho-236ml-102967.html>
+{'crawl_time': '2023-06-28 12:27:33',
+ 'name': 'Sữa Rửa Mặt CeraVe Cho Da Thường Đến Khô 236ml',
+ 'original_price': '285000 ',
+ 'price': '245000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-naruko-tram-tra-kiem-soat-dau-va-giam-mun-26ml-55867.html> (referer: None)
+2023-06-28 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-8-gel-rua-mat-la-roche-posay-danh-cho-da-dau-nhay-cam-50mlx8-106039.html> (referer: None)
+2023-06-28 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/mat-na-bnbg-vitamin-c-duong-sang-da-30ml-3949.html> (referer: None)
+2023-06-28 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-naruko-tram-tra-kiem-soat-dau-va-giam-mun-26ml-55867.html>
+{'crawl_time': '2023-06-28 12:27:33',
+ 'name': 'Mặt Nạ Naruko Tràm Trà Kiểm Soát Dầu Và Giảm Mụn 26ml',
+ 'original_price': '40000 ',
+ 'price': '23000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-8-gel-rua-mat-la-roche-posay-danh-cho-da-dau-nhay-cam-50mlx8-106039.html>
+{'crawl_time': '2023-06-28 12:27:33',
+ 'name': 'Combo 8 Gel Rửa Mặt La Roche-Posay Cho Da Dầu Nhạy Cảm 50ml',
+ 'original_price': '1680000 ',
+ 'price': '384000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:33 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/mat-na-bnbg-vitamin-c-duong-sang-da-30ml-3949.html>
+{'crawl_time': '2023-06-28 12:27:33',
+ 'name': 'Mặt Nạ BNBG Vitamin C Chống Oxy Hóa, Làm Sáng Da 30ml',
+ 'original_price': '49000 ',
+ 'price': '17000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-eucerin-cho-da-dau-mun-400ml-76844.html> (referer: None)
+2023-06-28 12:27:33 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-tam-lifebuoy-detox-matcha-kho-qua-800g-100799.html> (referer: None)
+2023-06-28 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-eucerin-cho-da-dau-mun-400ml-76844.html>
+{'crawl_time': '2023-06-28 12:27:34',
+ 'name': 'Gel Rửa Mặt Eucerin Cho Da Nhờn Mụn 400ml',
+ 'original_price': '529000 ',
+ 'price': '397000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-tam-lifebuoy-detox-matcha-kho-qua-800g-100799.html>
+{'crawl_time': '2023-06-28 12:27:34',
+ 'name': 'Sữa Tắm Lifebuoy Detox Matcha & Khổ Qua 800g',
+ 'original_price': '195000 ',
+ 'price': '149000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/gel-rua-mat-bioderma-danh-cho-da-dau-hon-hop-200ml-tuyp-95721.html> (referer: None)
+2023-06-28 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/gel-rua-mat-bioderma-danh-cho-da-dau-hon-hop-200ml-tuyp-95721.html>
+{'crawl_time': '2023-06-28 12:27:34',
+ 'name': 'Gel Rửa Mặt Bioderma Dành Cho Da Dầu & Hỗn Hợp 200ml (Tuýp)',
+ 'original_price': '325000 ',
+ 'price': '251000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cerave-tao-bot-cho-da-thuong-den-da-dau-88ml-102961.html> (referer: None)
+2023-06-28 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-rua-mat-hada-labo-duong-sang-da-80g-4358.html> (referer: None)
+2023-06-28 12:27:34 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cerave-tao-bot-cho-da-thuong-den-da-dau-88ml-102961.html>
+{'crawl_time': '2023-06-28 12:27:34',
+ 'name': 'Sữa Rửa Mặt CeraVe Sạch Sâu Cho Da Thường Đến Da Dầu 88ml',
+ 'original_price': '145000 ',
+ 'price': '137000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:34 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-473ml-moi-101585.html> (referer: None)
+2023-06-28 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-rua-mat-hada-labo-duong-sang-da-80g-4358.html>
+{'crawl_time': '2023-06-28 12:27:35',
+ 'name': 'Kem Rửa Mặt Hada Labo Sạch Sâu, Dưỡng Sáng Da 80g',
+ 'original_price': '93000 ',
+ 'price': '70000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-rua-mat-cetaphil-diu-nhe-khong-xa-phong-473ml-moi-101585.html>
+{'crawl_time': '2023-06-28 12:27:35',
+ 'name': 'Sữa Rửa Mặt Cetaphil Dịu Lành Cho Da Nhạy Cảm 473ml (Mới)',
+ 'original_price': '396000 ',
+ 'price': '315000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/serum-chong-nang-duong-the-biore-khang-bui-sang-min-mat-lanh-spf-50-pa-150ml-29157.html> (referer: None)
+2023-06-28 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/sua-duong-the-vaseline-diu-mat-sang-da-350ml-88621.html> (referer: None)
+2023-06-28 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/serum-chong-nang-duong-the-biore-khang-bui-sang-min-mat-lanh-spf-50-pa-150ml-29157.html>
+{'crawl_time': '2023-06-28 12:27:35',
+ 'name': 'Serum Chống Nắng Dưỡng Thể Bioré Sáng Mịn Mát Lạnh 150ml',
+ 'original_price': '216000 ',
+ 'price': '173000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/sua-duong-the-vaseline-diu-mat-sang-da-350ml-88621.html>
+{'crawl_time': '2023-06-28 12:27:35',
+ 'name': 'Sữa Dưỡng Thể Vaseline Dịu Mát Sáng Da 350ml',
+ 'original_price': '150000 ',
+ 'price': '102000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-bioderma-danh-cho-da-nhay-cam-100ml-1735.html> (referer: None)
+2023-06-28 12:27:35 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/combo-3-bong-tay-trang-ipek-150-mieng-95029.html> (referer: None)
+2023-06-28 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-bioderma-danh-cho-da-nhay-cam-100ml-1735.html>
+{'crawl_time': '2023-06-28 12:27:35',
+ 'name': 'Nước Tẩy Trang Bioderma Dành Cho Da Nhạy Cảm 100ml',
+ 'original_price': '225000 ',
+ 'price': '168000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:35 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/combo-3-bong-tay-trang-ipek-150-mieng-95029.html>
+{'crawl_time': '2023-06-28 12:27:35',
+ 'name': 'Combo 3 Bông Tẩy Trang Ipek 150 Miếng',
+ 'original_price': '150000 ',
+ 'price': '83000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-bio-essence-400ml-80225.html> (referer: None)
+2023-06-28 12:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-bio-essence-400ml-80225.html>
+{'crawl_time': '2023-06-28 12:27:36',
+ 'name': 'Nước Tẩy Trang Bio-essence Không Cồn Sạch Sâu Da 400ml',
+ 'original_price': '280000 ',
+ 'price': '140000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-95ml-5296.html> (referer: None)
+2023-06-28 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-svr-micellar-giup-loai-bo-dau-cho-da-400ml-55177.html> (referer: None)
+2023-06-28 12:27:36 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-tuoi-mat-l-oreal-3-in-1-danh-cho-da-dau-da-hon-hop-95ml-5296.html>
+{'crawl_time': '2023-06-28 12:27:36',
+ 'name': "[Mini] Nước Tẩy Trang L'Oreal Tươi Mát Cho Da Dầu, Hỗn Hợp 95ml",
+ 'original_price': '79000 ',
+ 'price': '64000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-eucerin-danh-cho-da-nhon-mun-200ml-73634.html> (referer: None)
+2023-06-28 12:27:36 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-chiet-xuat-cay-phi-derladie-500ml-80605.html> (referer: None)
+2023-06-28 12:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-svr-micellar-giup-loai-bo-dau-cho-da-400ml-55177.html>
+{'crawl_time': '2023-06-28 12:27:37',
+ 'name': 'Nước Tẩy Trang SVR Micellar Giúp Loại Bỏ Dầu Cho Da 400ml',
+ 'original_price': '465000 ',
+ 'price': '369000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-eucerin-danh-cho-da-nhon-mun-200ml-73634.html>
+{'crawl_time': '2023-06-28 12:27:37',
+ 'name': 'Nước Tẩy Trang Eucerin Dành Cho Da Nhờn Mụn 200ml',
+ 'original_price': '349000 ',
+ 'price': '262000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-chiet-xuat-cay-phi-derladie-500ml-80605.html>
+{'crawl_time': '2023-06-28 12:27:37',
+ 'name': 'Nước Tẩy Trang Derladie Ngừa Mụn, Làm Sạch Da 500ml',
+ 'original_price': '499000 ',
+ 'price': '150000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/nuoc-tay-trang-byphasse-cho-moi-loai-da-500ml-3183.html> (referer: None)
+2023-06-28 12:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/nuoc-tay-trang-byphasse-cho-moi-loai-da-500ml-3183.html>
+{'crawl_time': '2023-06-28 12:27:37',
+ 'name': 'Nước Tẩy Trang Byphasse Cho Mọi Loại Da 500ml',
+ 'original_price': '180000 ',
+ 'price': '86000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/bong-tay-trang-mihoo-kokimi-bong-tron-tui-210-mieng-93861.html> (referer: None)
+2023-06-28 12:27:37 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-la-roche-posay-kiem-soat-dau-spf50-50ml-12684.html> (referer: None)
+2023-06-28 12:27:37 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/bong-tay-trang-mihoo-kokimi-bong-tron-tui-210-mieng-93861.html>
+{'crawl_time': '2023-06-28 12:27:37',
+ 'name': 'Bông Tẩy Trang Mihoo Kokimi Bông Tròn Túi 210 miếng',
+ 'original_price': '59000 ',
+ 'price': '57000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-la-roche-posay-kiem-soat-dau-spf50-50ml-12684.html>
+{'crawl_time': '2023-06-28 12:27:38',
+ 'name': 'Kem Chống Nắng La Roche-Posay Kiểm Soát Dầu SPF50+ 50ml',
+ 'original_price': '535000 ',
+ 'price': '374000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-skin1004-chiet-xuat-rau-ma-spf50-pa-50ml-86167.html> (referer: None)
+2023-06-28 12:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-skin1004-chiet-xuat-rau-ma-spf50-pa-50ml-86167.html>
+{'crawl_time': '2023-06-28 12:27:38',
+ 'name': 'Kem Chống Nắng Skin1004 Cho Da Nhạy Cảm SPF 50+ 50ml',
+ 'original_price': '425000 ',
+ 'price': '276000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-am-lam-diu-da-ban-dem-klairs-60ml-66026.html> (referer: None)
+2023-06-28 12:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-martiderm-pho-rong-toan-dien-spf50-40ml-90401.html> (referer: None)
+2023-06-28 12:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-am-lam-diu-da-ban-dem-klairs-60ml-66026.html>
+{'crawl_time': '2023-06-28 12:27:38',
+ 'name': 'Kem Dưỡng Ẩm Klairs Làm Dịu & Phục Hồi Da Ban Đêm 60ml',
+ 'original_price': '565000 ',
+ 'price': '367000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:38 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-martiderm-pho-rong-toan-dien-spf50-40ml-90401.html>
+{'crawl_time': '2023-06-28 12:27:38',
+ 'name': 'Kem Chống Nắng MartiDerm Phổ Rộng Bảo Vệ Toàn Diện 40ml',
+ 'original_price': '1350000 ',
+ 'price': '749000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-am-neutrogena-cung-cap-nuoc-cho-da-50g-90339.html> (referer: None)
+2023-06-28 12:27:38 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-la-roche-posay-lam-diu-da-giam-kich-ung-40ml-1016.html> (referer: None)
+2023-06-28 12:27:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-am-neutrogena-cung-cap-nuoc-cho-da-50g-90339.html>
+{'crawl_time': '2023-06-28 12:27:39',
+ 'name': 'Kem Dưỡng Ẩm Neutrogena Cấp Nước Cho Da Dầu 50g',
+ 'original_price': '370000 ',
+ 'price': '270000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-l-oreal-paris-x20-thoang-da-mong-nhe-50ml-105523.html> (referer: None)
+2023-06-28 12:27:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-la-roche-posay-lam-diu-da-giam-kich-ung-40ml-1016.html>
+{'crawl_time': '2023-06-28 12:27:39',
+ 'name': 'Kem Dưỡng La Roche-Posay Làm Dịu, Hỗ Trợ Phục Hồi Da 40ml',
+ 'original_price': '390000 ',
+ 'price': '312000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-l-oreal-paris-x20-thoang-da-mong-nhe-50ml-105523.html>
+{'crawl_time': '2023-06-28 12:27:39',
+ 'name': "Kem Chống Nắng L'Oreal Paris X20 Thoáng Da Mỏng Nhẹ 50ml",
+ 'original_price': '349000 ',
+ 'price': '289000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-obagi-retinol-0-5-ngan-ngua-lao-hoa-da-28g-101791.html> (referer: None)
+2023-06-28 12:27:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-obagi-retinol-0-5-ngan-ngua-lao-hoa-da-28g-101791.html>
+{'crawl_time': '2023-06-28 12:27:39',
+ 'name': 'Kem Dưỡng Obagi Retinol 0.5% Ngăn Ngừa Lão Hoá Da 28g',
+ 'original_price': '1620000 ',
+ 'price': '1149000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-obagi-retinol-1-0-tre-hoa-da-ngua-mun-28g-60613.html> (referer: None)
+2023-06-28 12:27:39 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-cocoon-bi-dao-quang-pho-rong-50ml-103871.html> (referer: None)
+2023-06-28 12:27:39 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-obagi-retinol-1-0-tre-hoa-da-ngua-mun-28g-60613.html>
+{'crawl_time': '2023-06-28 12:27:39',
+ 'name': 'Kem Dưỡng Obagi Retinol 1.0% Trẻ Hóa Da, Ngừa Mụn 28g',
+ 'original_price': '1750000 ',
+ 'price': '1137000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-cocoon-bi-dao-quang-pho-rong-50ml-103871.html>
+{'crawl_time': '2023-06-28 12:27:40',
+ 'name': 'Kem Chống Nắng Cocoon Bí Đao Quang Phổ Rộng 50ml',
+ 'original_price': '395000 ',
+ 'price': '354000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-eucerin-giup-kiem-soat-nhon-spf-50-uvb-uva-50ml-6258.html> (referer: None)
+2023-06-28 12:27:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-eucerin-giup-kiem-soat-nhon-spf-50-uvb-uva-50ml-6258.html>
+{'crawl_time': '2023-06-28 12:27:40',
+ 'name': 'Kem Chống Nắng Eucerin Cho Da Nhờn & Mụn 50ml',
+ 'original_price': '549000 ',
+ 'price': '439000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-la-roche-posay-lam-diu-ho-tro-phuc-hoi-da-100ml-93525.html> (referer: None)
+2023-06-28 12:27:40 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-la-roche-posay-lam-diu-ho-tro-phuc-hoi-da-100ml-93525.html>
+{'crawl_time': '2023-06-28 12:27:40',
+ 'name': 'Kem Dưỡng La Roche-Posay Làm Dịu, Hỗ Trợ Phục Hồi Da 100ml',
+ 'original_price': '635000 ',
+ 'price': '521000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-chong-nang-naris-cosmetics-dang-gel-nang-tone-da-80g-63663.html> (referer: None)
+2023-06-28 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-bioderma-giup-se-khit-lo-chan-long-giam-bong-nhon-30ml-1746.html> (referer: None)
+2023-06-28 12:27:40 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-avene-ho-tro-lam-lanh-da-ngua-nhiem-khuan-40ml-1-95523.html> (referer: None)
+2023-06-28 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-chong-nang-naris-cosmetics-dang-gel-nang-tone-da-80g-63663.html>
+{'crawl_time': '2023-06-28 12:27:41',
+ 'name': 'Kem Chống Nắng Naris Parasola Nâng Tông Da Dạng Gel 80g',
+ 'original_price': '495000 ',
+ 'price': '371000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-bioderma-giup-se-khit-lo-chan-long-giam-bong-nhon-30ml-1746.html>
+{'crawl_time': '2023-06-28 12:27:41',
+ 'name': 'Kem Dưỡng Bioderma Giúp Se Khít Lỗ Chân Lông 30ml',
+ 'original_price': '475000 ',
+ 'price': '380000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-avene-ho-tro-lam-lanh-da-ngua-nhiem-khuan-40ml-1-95523.html>
+{'crawl_time': '2023-06-28 12:27:41',
+ 'name': 'Kem Dưỡng Avène Hỗ Trợ Làm Lành Da, Ngừa Nhiễm Khuẩn 40ml',
+ 'original_price': '424000 ',
+ 'price': '306000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-la-roche-posay-giam-mun-ngua-vet-tham-15ml-95671.html> (referer: None)
+2023-06-28 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-la-roche-posay-giam-mun-ngua-vet-tham-15ml-95671.html>
+{'crawl_time': '2023-06-28 12:27:41',
+ 'name': 'Kem Dưỡng La Roche-Posay Giảm Mụn, Ngừa Vết Thâm 15ml',
+ 'original_price': '150000 ',
+ 'price': '123000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-bioderma-phuc-hoi-va-lam-diu-da-bi-kich-ung-40ml-1742.html> (referer: None)
+2023-06-28 12:27:41 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-bioderma-phuc-hoi-va-lam-diu-da-bi-kich-ung-40ml-1742.html>
+{'crawl_time': '2023-06-28 12:27:41',
+ 'name': 'Kem Dưỡng Bioderma Hỗ Trợ Phục Hồi Da Tổn Thương 40ml',
+ 'original_price': '345000 ',
+ 'price': '345000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:41 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-angel-s-liquid-duong-sang-da-mo-nam-50ml-92981.html> (referer: None)
+2023-06-28 12:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-angel-s-liquid-duong-sang-da-mo-nam-50ml-92981.html>
+{'crawl_time': '2023-06-28 12:27:42',
+ 'name': "Kem Dưỡng Angel's Liquid Dưỡng Sáng Da, Mờ Thâm Nám 50ml",
+ 'original_price': '799000 ',
+ 'price': '390000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-sang-toi-uu-hada-labo-50g-4367.html> (referer: None)
+2023-06-28 12:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-sang-toi-uu-hada-labo-50g-4367.html>
+{'crawl_time': '2023-06-28 12:27:42',
+ 'name': 'Kem Dưỡng Hada Labo Sáng Da Chuyên Sâu, Giảm Thâm Sạm 50g',
+ 'original_price': '240000 ',
+ 'price': '192000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-l-oreal-paris-glycolic-sang-min-mo-tham-nam-ban-dem-50ml-99713.html> (referer: None)
+2023-06-28 12:27:42 [scrapy.crawler] INFO: Received SIGINT, shutting down gracefully. Send again to force 
+2023-06-28 12:27:42 [scrapy.crawler] INFO: Received SIGINT twice, forcing unclean shutdown
+2023-06-28 12:27:42 [scrapy.core.scraper] DEBUG: Scraped from <200 https://hasaki.vn/san-pham/kem-duong-l-oreal-paris-glycolic-sang-min-mo-tham-nam-ban-dem-50ml-99713.html>
+{'crawl_time': '2023-06-28 12:27:42',
+ 'name': "Kem Dưỡng L'Oreal Paris Sáng Mịn Mờ Thâm Nám Ban Đêm 50ml",
+ 'original_price': '329000 ',
+ 'price': '269000 ',
+ 'status': 'Còn hàng',
+ 'table_name': 'hasaki'}
+2023-06-28 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-am-klairs-danh-cho-da-kho-mat-nuoc-80ml-95305.html> (referer: None)
+2023-06-28 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/kem-duong-the-paula-s-choice-2-bha-tay-te-bao-chet-210ml-2649.html> (referer: None)
+2023-06-28 12:27:42 [scrapy.core.engine] DEBUG: Crawled (200) <GET https://hasaki.vn/san-pham/vien-uong-dhc-zinc-bo-sung-kem-goi-30-vien-30-ngay-94255.html> (referer: None)
+2023-06-28 12:27:42 [scrapy.core.engine] INFO: Closing spider (shutdown)
+2023-06-28 12:27:42 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://hasaki.vn/san-pham/kem-duong-la-roche-posay-giam-mun-ngua-vet-tham-khong-mau-40ml-1021.html. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2023-06-28 12:27:42 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://hasaki.vn/san-pham/kem-duong-la-roche-posay-giam-mun-ngua-vet-tham-khong-mau-40ml-1021.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
+2023-06-28 12:27:42 [scrapy.core.downloader.handlers.http11] WARNING: Got data loss in https://hasaki.vn/san-pham/kem-duong-skin1004-lam-diu-da-chiet-xuat-rau-ma-75ml-89637.html. If you want to process broken responses set the setting DOWNLOAD_FAIL_ON_DATALOSS = False -- This message won't be shown in further requests
+2023-06-28 12:27:42 [scrapy.downloadermiddlewares.retry] DEBUG: Retrying <GET https://hasaki.vn/san-pham/kem-duong-skin1004-lam-diu-da-chiet-xuat-rau-ma-75ml-89637.html> (failed 1 times): [<twisted.python.failure.Failure twisted.internet.error.ConnectionLost: Connection to the other side was lost in a non-clean fashion: Connection lost.>, <twisted.python.failure.Failure twisted.web.http._DataLoss: Chunked decoder in 'BODY' state, still expecting more data to get to 'FINISHED' state.>]
